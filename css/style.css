@@ -96,16 +96,14 @@ body, html{
 
 /* Style for menu section */
 
-embed, .pdf-menu{
+embed{
     width: 100%;
-    height: 100%;
+    height: 48rem;
 }
 
 /* Style for location section */
-.location, .menu {
+.location, .menu , .contact{
     font-size: 1.6rem;
-    height: 100%;
-    overflow: hidden;
 }
 
 .location .heading, .menu .heading{
@@ -124,12 +122,6 @@ embed, .pdf-menu{
     top: 50%;
     transform: translate(-50%, -50%);
     margin-top: 0.5rem;
-}
-
-.location .contact{
-    width: 100%;
-    padding: 3rem;
-    overflow: hidden;
 }
 
 .location .contact p{
@@ -164,17 +156,36 @@ embed, .pdf-menu{
 
 .location .fa-times{color: red;}
 
-.location .map{
-    height: 50%;
-}
-
 .location .map iframe{
     width: 100%;
-    height: 100%;
+    height: 48rem;
+}
+
+.footer a.logo {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.footer > a , .footer-right{
+    display: block;
+    float: left;
+    color: black;
+    padding: 3.2rem 0;
+    text-decoration: none;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    width: 50%;
+}
+
+.footer-right {
+    float: right;
+}
+
+.footer-right a{
+    text-decoration: none;
 }
 
 /* Add media queries for responsive - when the screen is 500px or less, stack the links on top of each other */
-@media screen and (max-width: 576px){
+@media screen and (max-width: 768px){
     .header a {
         float: none;
         display: block;
@@ -188,5 +199,11 @@ embed, .pdf-menu{
         display: block;
         width: 100%;
         float: none;
+    }
+
+    .footer-right{
+        width: 100%;
+        float: left;
+        padding: 0;
     }
 }
