@@ -94,17 +94,26 @@ body, html{
     font-size: 1.6rem;
 }
 
-/* Style for location section */
-.location {
-    font-size: 1.6rem;
+/* Style for menu section */
+
+embed, .pdf-menu{
+    width: 100%;
     height: 100%;
 }
 
-.location .heading{
-    text-align: center;
+/* Style for location section */
+.location, .menu {
+    font-size: 1.6rem;
+    height: 100%;
+    overflow: hidden;
 }
 
-.location .heading h1::after {
+.location .heading, .menu .heading{
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.location .heading h1::after, .menu .heading h1::after {
     content: "";
     display: block;
     height: 0.75rem;
