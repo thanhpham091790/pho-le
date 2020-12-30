@@ -34,7 +34,7 @@
 .carousel-item{
     max-height: 85vh;
 }
-.jumbotron{
+.note-section .jumbotron{
     font-family: BarlowSemiCondensed-SemiBold;
     font-style: normal;
     font-weight: 800;
@@ -46,14 +46,14 @@
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
 }
-.about-us h2{
+.about-section h2{
     font-family: Allura-Regular;
     color: #38312d;
     line-height: 100%;
     font-size: 80px;
     text-transform: capitalize;
 }
-.about-us p{
+.about-section p{
     font-family: Barlow,sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -62,4 +62,19 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+}
+.hour-section .jumbotron{
+    font-family: BarlowSemiCondensed-SemiBold;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #38312d;
+    letter-spacing: .625px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+.hour-section i{
+    font-size: 48px;
 }
