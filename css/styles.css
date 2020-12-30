@@ -1,0 +1,20 @@
+@font-face{
+    font-family: BarlowCondensed-ExtraBold;
+    src: url("../fonts/barlow/BarlowCondensed-ExtraBold.otf");
+}
+.navbar a{
+    font-family: BarlowCondensed-ExtraBold;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 22px;
+    margin: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 7px 0;
+    cursor: pointer;
+}
+
+.navbar-brand img{
+    height: 150px;
+}

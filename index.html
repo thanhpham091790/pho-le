@@ -1,105 +1,55 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Pho Le Restaurant</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- External Stylesheet -->
-        <link rel="stylesheet" href="./css/style.css">
+<head>
+    <title>Pho Le Restaurant</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
 
-        <!-- Font Awesome 5-->
-     <script src="https://kit.fontawesome.com/afd6f2ac8a.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <!-- Create a responsive header -->
-        <div class="header">
-            <a href="#" class="logo">Pho Le Restaurant</a>
-            <div class="header-right">
-                <a href="#home" class="active">Home</a>
-                <a href="#menu">Menu</a>
-                <a href="#location">Location</a>
-            </div>
-        </div>
-
-        <!-- Create a hero image-->
-        <div id="home"  class="hero-image">
-            <div class="hero-text">
-                <h1>Pho Le Restaurant</h1>
-                <p>Vietnamese Noodle House</p>
-                <a href="./Pho_Le_Menu.pdf">See Menu</a>
-            </div>
-        </div>
-
-        <!-- Create a menu secton -->
-        <div id="menu" class="menu">
-            <div class="heading">
-                <h1>Our Menu</h1>
-                <p>Find everything from our rice, our special and our always Pho, Bun.</p>
-            </div>
-            <div class="pdf-menu">
-                <embed src="./Pho_Le_Menu.pdf"/>
-            </div>
-        </div>
-
-        <!-- Create a location section -->
-        <div id="location" class="location">
-            <div class="heading">
-                <h1>Location</h1>
-                <p>Below please find the best means by which you may contact us.</p>
-            </div>
-            <div class="contact">
-                <div class="info">
-                    <p>
-                        <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>
-                        <a href="https://goo.gl/maps/XhhuPFxBYFF8CyZ36" target="_blank">
-                            Pho Le - 2719 S Parker Rd, Aurora, CO 80014
-                        </a>
-                    </p>
-                    <p>
-                        <i class="fa fa-fw fa-phone" aria-hidden="true"></i>
-                        <a href="tel:+13037503007">
-                            (303) 750-3007
-                        </a>
-                    </p>
-                    <p>
-                        <i class="fa fa-fw fa-clock-o" aria-hidden="true"></i>
-                        <span>Open Hours</span>
-                    </p>
-                    <div class="sub-list">
-                        <p><i class="fa fa-fw fa-times" aria-hidden="true"></i><span>Mon: Close</span></p>
-                        
-                        <p><i class="fa fa-fw fa-check" aria-hidden="true"></i><span>Tue - Sat: 10AM - 9PM</span></p>
-                        
-                        <p><i class="fa fa-fw fa-check" aria-hidden="true"></i><span>Sun: 11AM - 8:30PM</span></p>
-                    </div>
-                </div>
-
-                <div class="services">
-                    <p>
-                        <i class="fa fa-fw fa-cutlery" aria-hidden="true"></i>
-                        <span>Our Services</span>
-                    </p>
-                    <div class="sub-list">
-                        <p><i class="fa fa-fw fa-check" aria-hidden="true"></i><span>Takeout</span></p>
-                        <p><i class="fa fa-fw fa-check" aria-hidden="true"></i><span>Online Ordering From Third Party</span></p>
-                        <p><i class="fa fa-fw fa-check" aria-hidden="true"></i><span>Carside To Go</span></p>
-                        <p><i class="fa fa-fw fa-check" aria-hidden="true"></i><span> Wi-Fi Available</span></p>
-                        <p><i class="fa fa-fw fa-times" aria-hidden="true"></i><span>Dine In</span></p>
-                        <p><i class="fa fa-fw fa-times" aria-hidden="true"></i><span>Delivery</span></p>
-                    </div>
+<body>
+    <!-- Navbar Section -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm p-0 navbar-light bg-light">
+            <div class="container">
+                <!-- Brand/logo -->
+                <a class="navbar-brand p-0" href="#">
+                    <img src="media/logos/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3071.220302332351!2d-104.86578738431703!3d39.667258679459195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c87f16d714377%3A0xdc8af7e04f01f118!2sPho%20Le!5e0!3m2!1sen!2sus!4v1605931208822!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
-        </div>
+        </nav>
+    </div>
 
-        <!-- Create a footer section -->
-        <div class="footer">
-            <a href="#" class="logo">Pho Le Restaurant</a>
-            <div class="footer-right">
-                <span>Copyright 2020 - <a href="http://www.phamhongthanh.com">Pham Hong Thanh </a> - All Rights Reserved</span>
-            </div>
-        </div>
-    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
 </html>
