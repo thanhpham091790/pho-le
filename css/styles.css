@@ -1,6 +1,19 @@
 @font-face{
+    font-family: Allura-Regular;
+    src: url("../fonts/allura/Allura-Regular.ttf");
+}
+
+@font-face{
+    font-family: Barlow;
+    src: url("../fonts/barlow/Barlow-Regular.otf");
+}
+@font-face{
     font-family: BarlowCondensed-ExtraBold;
     src: url("../fonts/barlow/BarlowCondensed-ExtraBold.otf");
+}
+@font-face{
+    font-family: BarlowSemiCondensed-SemiBold;
+    src: url("../fonts/barlow/BarlowSemiCondensed-SemiBold.otf");
 }
 .navbar a{
     font-family: BarlowCondensed-ExtraBold;
@@ -20,4 +33,33 @@
 }
 .carousel-item{
     max-height: 85vh;
+}
+.jumbotron{
+    font-family: BarlowSemiCondensed-SemiBold;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #38312d;
+    letter-spacing: .625px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+.about-us h2{
+    font-family: Allura-Regular;
+    color: #38312d;
+    line-height: 100%;
+    font-size: 80px;
+    text-transform: capitalize;
+}
+.about-us p{
+    font-family: Barlow,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #38312d;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
