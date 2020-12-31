@@ -15,7 +15,7 @@
     font-family: BarlowSemiCondensed-SemiBold;
     src: url("../fonts/barlow/BarlowSemiCondensed-SemiBold.otf");
 }
-.navbar a{
+.navbar-section .navbar a{
     font-family: BarlowCondensed-ExtraBold;
     font-style: normal;
     font-weight: 800;
@@ -28,10 +28,10 @@
     cursor: pointer;
 }
 
-.navbar-brand img{
+.navbar-section .navbar-brand img{
     max-height: 15vh;
 }
-.carousel-item{
+.home-section .carousel-item{
     max-height: 85vh;
 }
 .note-section .jumbotron{
@@ -40,7 +40,6 @@
     font-weight: 800;
     font-size: 36px;
     text-transform: uppercase;
-    color: #38312d;
     letter-spacing: .625px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -48,7 +47,6 @@
 }
 .about-section h2{
     font-family: Allura-Regular;
-    color: #38312d;
     line-height: 100%;
     font-size: 80px;
     text-transform: capitalize;
@@ -58,7 +56,6 @@
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    color: #38312d;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -69,7 +66,6 @@
     font-weight: 800;
     font-size: 24px;
     text-transform: capitalize;
-    color: #38312d;
     letter-spacing: .625px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -77,4 +73,67 @@
 }
 .hour-section i{
     font-size: 48px;
+}
+.menu-section .nav-tabs a{
+    font-family: BarlowSemiCondensed-SemiBold;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 22px;
+    margin: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 7px 0;
+    cursor: pointer;
+}
+.menu-section .nav-tabs a span{
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    margin: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 7px 0;
+    cursor: pointer;
+}
+.nav-tabs .nav-link.active{
+    color: #28A745 !important;
+}
+
+.menu-section h2{
+    font-family: Allura-Regular;
+    line-height: 100%;
+    font-size: 80px;
+    text-transform: capitalize;
+}
+.menu-section h3{
+    font-family: Allura-Regular;
+    line-height: 100%;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.menu-section .p-name{
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 22px;
+    margin: 0 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 7px 0;
+    cursor: pointer;
+}
+.menu-section .p-desc{
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 7px 0;
+    cursor: pointer;
 }
