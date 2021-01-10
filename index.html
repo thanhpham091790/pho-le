@@ -77,16 +77,10 @@
             <div class="container text-center text-dark">
                 <div class="row">
                     <div class="col-12">
-                        <div class="notes">
-                            <p>We open for Dine in & Take out</p>
-                        </div>
+                        <div class="notes" id="note-info"></div>
                     </div>
                     <div class="col-12">
-                        <div class="hours">
-                            <p>Monday: Closed</p>
-                            <p>Tue-Sat: 10AM - 9PM</p>
-                            <p>Sunday: 11AM - 8:30PM</p>
-                        </div>
+                        <div class="hours" id="note-hours"></div>
                     </div>
                 </div>
             </div>
@@ -100,21 +94,12 @@
             </div>
             <div class="col-md-6 align-self-center">
                 <h2 class="text-center text-success mt-5">Welcome</h2>
-                <p>Located in the heart of Aurora, Colorado, Pho Le is an authentic Vietnamese restaurant where you
-                    can enjoy amazing and unique dishes from one of the most beautiful countries in South East Asia
-                    while you are not putting your feet on Vietnam’s territory.</p>
-
-                <p>We serve delicious, exquisite, and best-loved Vietnamese dishes, such as Pho, rice noodle bowls,
-                    spring rolls, steam rice plates, new, special dishes, and much more. With Pho Le’s well
-                    prepared food, nice clean fresh atmosphere, friendly, efficient service, you will like our
-                    restautant from the minute you walk in. Thank you for your attention to us, we hope to see you
-                    soon in Pho Le.</p>
+                <div id="about-info"></div>
             </div>
         </div>
     </div>
     <!-- Menu section -->
     <div id="menu" class="container-fluid my-3 menu-section">
-        <!-- <div class="container"> -->
         <div class="row">
             <div class="col-md-4">
                 <!-- Nav tabs -->
@@ -129,14 +114,7 @@
                         <a class="nav-link text-dark m-0 py-3 border-bottom dropdown-toggle d-md-none"
                             data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                             aria-expanded="false"></a>
-                        <div class="dropdown-menu d-md-block">
-                            <a class="dropdown-item text-dark m-0 py-3 border-bottom" data-toggle="tab"
-                                href="#appetizers">Appetizers</a>
-                            <a class="dropdown-item text-dark m-0 py-3 border-bottom" data-toggle="tab"
-                                href="#kidmeals">Kid Meals</a>
-                            <a class="dropdown-item text-dark m-0 py-3 border-bottom" data-toggle="tab"
-                                href="#wraps">Wraps</a>
-                        </div>
+                        <div class="dropdown-menu d-md-block" id="menu-nav"></div>
                     </li>
                     <!-- <li class="nav-item">
                             <a data-toggle="tab" href="#appetizers"
@@ -199,7 +177,7 @@
             <div class="col-md-8">
                 <!-- Tab panes -->
                 <div class="tab-content" id="menu-items">
-                    <div id="appetizers" class="container-fluid tab-pane active"><br>
+                    <!-- <div id="appetizers" class="container-fluid tab-pane active">
                         <div class="row">
                             <div class="col-12">
                                 <h3 class="c-name text-success">Appetizers</h3>
@@ -213,7 +191,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-10">
+                            <div class="col-8">
                                 <p class="p-name">A1. Goi Cuon - Steamed Spring Roll (2pcs)
                                     <span class="p-img"><i class="fas fa-camera text-success" data-toggle="modal"
                                             data-target="#a1"></i></span>
@@ -228,12 +206,14 @@
                                 <p class="p-desc">Your choice of: Steamed pork, beef, chicken, shrimp, tofu, or
                                     grilled meat (+1)</p>
                             </div>
-                            <div class="col-2">
-                                <p class="p-price">6.95</p>
+                            <div class="col-4">
+                                <div class="p-price">
+                                    <p>6.95</p>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-10">
+                            <div class="col-8">
                                 <p class="p-name">A2. Cha Gio - Crispy Vietnamese Eggroll (6pcs)
                                     <span class="p-img"><i class="fas fa-camera text-success" data-toggle="modal"
                                             data-target="#a2"></i></span>
@@ -248,14 +228,15 @@
                                 <p class="p-desc">Your choice of: Steamed pork, beef, chicken, shrimp, tofu, or
                                     grilled meat (+1)</p>
                             </div>
-                            <div class="col-2">
-                                <p class="p-price">8.95</p>
+                            <div class="col-4">
+                                <div class="p-price">
+                                    <p>6.00 (Half)</p>
+                                    <p>8.00 (Full)</p>
+                                </div>
                             </div>
                         </div>
-
-
                     </div>
-                    <div id="kidmeals" class="container-fluid tab-pane fade"><br>
+                    <div id="kidmeals" class="container-fluid tab-pane fade">
                         <div class="row">
                             <div class="col-12">
                                 <h3 class="c-name text-success">Kid Meals</h3>
@@ -269,7 +250,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="wraps" class="container-fluid tab-pane fade"><br>
+                    <div id="wraps" class="container-fluid tab-pane fade">
                         <div class="row">
                             <div class="col-12">
                                 <h3 class="c-name text-success">Wraps</h3>
@@ -282,55 +263,55 @@
                                     bowl of soup</p>
                             </div>
                         </div>
-                    <div id="hotpot" class="container-fluid tab-pane fade"><br>
+                    </div>
+                    <div id="hotpot" class="container-fluid tab-pane fade">
                         <h3>Hot Pot</h3>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                             laudantium, totam rem aperiam.</p>
                     </div>
-                    <div id="salads" class="container-fluid tab-pane fade"><br>
+                    <div id="salads" class="container-fluid tab-pane fade">
                         <h3>Salads</h3>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                             laudantium, totam rem aperiam.</p>
                     </div>
-                    <div id="ricenoodlebowl" class="container-fluid tab-pane fade"><br>
+                    <div id="ricenoodlebowl" class="container-fluid tab-pane fade">
                         <h3>Rice Noodle Bowl</h3>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                             laudantium, totam rem aperiam.</p>
                     </div>
-                    <div id="friedrice" class="container-fluid tab-pane fade"><br>
+                    <div id="friedrice" class="container-fluid tab-pane fade">
                         <h3>Fried Rice</h3>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                             laudantium, totam rem aperiam.</p>
                     </div>
-                    <div id="porridge" class="container-fluid tab-pane fade"><br>
+                    <div id="porridge" class="container-fluid tab-pane fade">
                         <h3>Porridge</h3>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                             laudantium, totam rem aperiam.</p>
                     </div>
-                    <div id="steamedbrokenriceplate" class="container-fluid tab-pane fade"><br>
+                    <div id="steamedbrokenriceplate" class="container-fluid tab-pane fade">
                         <h3>Steamed Broken Rice Plate</h3>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                             laudantium, totam rem aperiam.</p>
                     </div>
-                    <div id="ricenoodlesoup" class="container-fluid tab-pane fade"><br>
+                    <div id="ricenoodlesoup" class="container-fluid tab-pane fade">
                         <h3>Rice Noodle Soup</h3>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                             laudantium, totam rem aperiam.</p>
                     </div>
-                    <div id="specialities" class="container-fluid tab-pane fade"><br>
+                    <div id="specialities" class="container-fluid tab-pane fade">
                         <h3>Specialities</h3>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                             laudantium, totam rem aperiam.</p>
                     </div>
-                    <div id="vegetarian" class="container-fluid tab-pane fade"><br>
+                    <div id="vegetarian" class="container-fluid tab-pane fade">
                         <h3>Vegetarian</h3>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                             laudantium, totam rem aperiam.</p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
-        <!-- </div> -->
     </div>
     <!-- Contact section -->
     <div id="contact" class="container-fluid my-3 contact-section">
@@ -348,13 +329,12 @@
                             <div class="col-12">
                                 <p><i class="fas fa-map-marker-alt text-success"></i></p>
                                 <p>Pho Le Aurora</p>
-                                <p><a class="text-dark text-decoration-none" href="https://goo.gl/maps/D4HvZm6A4mU6Cstp8">2719 S Parker Rd, Aurora, CO
-                                        80014</a></p>
+                                <p id="address-info"></p>
                             </div>
                             <div class="col-12">
                                 <p><i class="fas fa-phone-volume text-success"></i></p>
                                 <p>Call Us</p>
-                                <p class="contact"><a class="text-dark text-decoration-none" href="tel:303-750-3007">(303) 750-3007</a></p>
+                                <p id="phone-info"></p>
                             </div>
 
                         </div>

@@ -1,9 +1,27 @@
 {
-    "categories":[
+    "address": [
+        "https://goo.gl/maps/D4HvZm6A4mU6Cstp8",
+        "2719 S Parker Rd, Aurora, CO 80014"
+    ],
+    "phone": [
+        "3037503007",
+        "(303) 750-3007"
+    ],
+    "note": "We open for dine in & take out",
+    "hours": [
+        "Monday: Closed",
+        "Tue-Sat: 10AM - 9PM",
+        "Sunday: 11AM - 8:30PM"
+    ],
+    "about": [
+        "Located in the heart of Aurora, Colorado, Pho Le is an authentic Vietnamese restaurant where you can enjoy amazing and unique dishes from one of the most beautiful countries in South East Asia while you are not putting your feet on Vietnam’s territory.",
+        "We serve delicious, exquisite, and best-loved Vietnamese dishes, such as Pho, rice noodle bowls, spring rolls, steam rice plates, new, special dishes, and much more. With Pho Le’s well prepared food, nice clean fresh atmosphere, friendly, efficient service, you will like our restautant from the minute you walk in. Thank you for your attention to us, we hope to see you soon in Pho Le."
+    ],
+    "categories": [
         {
             "cid": "appetizers",
             "cename": "Appetizers",
-            "cvname": "Mon Khai Vi",
+            "cvname": "Món Khai Vị",
             "cimage": "./media/menus/appetizers/a0.jpg",
             "cposition": "0",
             "cdesc": "All plates served with vegetables, fish sauce and a bowl of soup",
@@ -19,7 +37,7 @@
                     "prices": [
                         {
                             "size": "",
-                            "price": "5"
+                            "price": "5.00"
                         }
                     ]
                 },
@@ -32,8 +50,12 @@
                     "pdesc": "Steamed Rice Plate: choice of grilled meat: beef, pork, chicken, shrimp (+$1)",
                     "prices": [
                         {
-                            "size": "",
-                            "price": "8"
+                            "price": "6.00",
+                            "size": "Half"
+                        },
+                        {
+                            "price": "8.00",
+                            "size": "Full"
                         }
                     ]
                 }
@@ -42,7 +64,7 @@
         {
             "cid": "kidmeals",
             "cename": "Kid Meals",
-            "cvname": "Mon Tre Em",
+            "cvname": "Under 12 years old",
             "cimage": "./media/menus/appetizers/a0.jpg",
             "cposition": "1",
             "cdesc": "All plates served with vegetables, fish sauce and a bowl of soup",
@@ -52,7 +74,7 @@
         {
             "cid": "wraps",
             "cename": "Wraps",
-            "cvname": "Mon Cuon",
+            "cvname": "Món cuốn",
             "cimage": "./media/menus/appetizers/a0.jpg",
             "cposition": "2",
             "cdesc": "All plates served with vegetables, fish sauce and a bowl of soup",
