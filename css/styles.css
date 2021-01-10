@@ -38,6 +38,16 @@
 .home-section .carousel-item {
     max-height: 85vh;
 }
+.home-section .carousel-cap{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+    z-index: 10;
+    padding: 16px 0px;
+    color: #fff;
+    text-align: center;
+}
 
 .note-section{
     font-family: BarlowSemiCondensed-SemiBold;
@@ -129,14 +139,14 @@
 .menu-section h2 {
     font-family: Allura-Regular;
     line-height: 100%;
-    font-size: 80px;
+    font-size: 54px;
     text-transform: capitalize;
 }
 
-.menu-section h3 {
+.menu-section h3, .home-section h3{
     font-family: Allura-Regular;
     line-height: 100%;
-    font-size: 50px;
+    font-size: 48px;
     text-transform: capitalize;
 }
 
