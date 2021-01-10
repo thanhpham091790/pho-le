@@ -13,7 +13,7 @@
 
 <body>
     <!-- Navbar Section -->
-    <div class="container-fluid navbar-section">
+    <div class="container-fluid my-3 navbar-section">
         <nav class="navbar navbar-expand-sm p-0 navbar-light bg-light">
             <div class="container">
                 <!-- Brand/logo -->
@@ -29,16 +29,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#menu">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -46,7 +43,7 @@
         </nav>
     </div>
     <!-- Carousel Section -->
-    <div class="container-fluid home-section">
+    <div id="home" class="container-fluid my-3 home-section">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -75,22 +72,35 @@
         </div>
     </div>
     <!-- Jumbotron section -->
-    <div class="container-fluid note-section">
+    <div id="note" class="container-fluid my-3 note-section">
         <div class="jumbotron m-0">
             <div class="container text-center text-dark">
-                <span>We open for Dine in & Take out.</span>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="notes">
+                            <p>We open for Dine in & Take out</p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="hours">
+                            <p>Monday: Closed</p>
+                            <p>Tue-Sat: 10AM - 9PM</p>
+                            <p>Sunday: 11AM - 8:30PM</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!-- About section -->
-    <div class="container-fluid about-section">
+    <div id="about" class="container-fluid my-3 about-section">
         <div class="row">
             <div class="col-md-6 align-self-center">
                 <img class="img-fluid" src="./media/carousels/carousel2.jpg" alt="About Us">
             </div>
             <div class="col-md-6 align-self-center">
                 <h2 class="text-center text-success mt-5">Welcome</h2>
-                <p>Located in the heart of Denver, Colorado, Pho Le is an authentic Vietnamese restaurant where you
+                <p>Located in the heart of Aurora, Colorado, Pho Le is an authentic Vietnamese restaurant where you
                     can enjoy amazing and unique dishes from one of the most beautiful countries in South East Asia
                     while you are not putting your feet on Vietnam’s territory.</p>
 
@@ -102,237 +112,281 @@
             </div>
         </div>
     </div>
-    <!-- Jumbotron section -->
-    <div class="container-fluid hour-section">
-        <div class="jumbotron m-0">
-            <div class="container-fluid text-center text-dark">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <p><i class="far fa-clock text-success"></i></p>
-                        <p>Mon - Sun</p>
-                        <p>9AM - 12AM (Midnight)</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <p><i class="fas fa-phone-volume text-success"></i></p>
-                        <p>Call Us Now</p>
-                        <p>(303) 935-6264</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <p><i class="fas fa-map-marker-alt text-success"></i></p>
-                        <p>1195 S Federal Blvd, Denver, CO 80219</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- Menu section -->
-    <div class="container-fluid menu-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs flex-column text-center bg-light">
-                        <li class="nav-item border-bottom">
-                            <h2 class="text-success py-3">Our Menu</h2>
-                        </li>
-                        <li class="nav-item border-bottom">
-                            <a data-toggle="tab" href="#appetizers" class="nav-link text-dark m-0 py-3 active" href="#">
+    <div id="menu" class="container-fluid my-3 menu-section">
+        <!-- <div class="container"> -->
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Nav tabs -->
+                <ul class="nav flex-column nav-tabs text-center bg-light">
+                    <li class="nav-item">
+                        <a data-toggle="tab" href="#kidmeals" class="nav-link text-dark m-0 py-3 border-bottom"
+                            href="#">
+                            <h2 class="text-success">Our Menu</h2>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-dark m-0 py-3 border-bottom dropdown-toggle d-md-none"
+                            data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                            aria-expanded="false"></a>
+                        <div class="dropdown-menu d-md-block">
+                            <a class="dropdown-item text-dark m-0 py-3 border-bottom" data-toggle="tab"
+                                href="#appetizers">Appetizers</a>
+                            <a class="dropdown-item text-dark m-0 py-3 border-bottom" data-toggle="tab"
+                                href="#kidmeals">Kid Meals</a>
+                            <a class="dropdown-item text-dark m-0 py-3 border-bottom" data-toggle="tab"
+                                href="#wraps">Wraps</a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav-item">
+                            <a data-toggle="tab" href="#appetizers"
+                                class="nav-link text-dark m-0 py-3 border-bottom active" href="#">
                                 Appetizers
                                 <span class="d-block">Mon Khai Vi</span>
                             </a>
                         </li>
-                        <li class="nav-item border-bottom">
-                            <a data-toggle="tab" href="#kidmeals" class="nav-link text-dark m-0 py-3" href="#">
+                        <li class="nav-item">
+                            <a data-toggle="tab" href="#kidmeals" class="nav-link text-dark m-0 py-3 border-bottom"
+                                href="#">
                                 Kid Meals
                                 <span class="d-block">Under 12 Year Old</span>
                             </a>
                         </li>
-                        <li class="nav-item border-bottom">
-                            <a data-toggle="tab" href="#wraps" class="nav-link text-dark m-0 py-3" href="#">Wraps</a>
+                        <li class="nav-item">
+                            <a data-toggle="tab" href="#wraps" class="nav-link text-dark m-0 py-3 border-bottom"
+                                href="#">Wraps</a>
                         </li>
-                        <li class="nav-item border-bottom">
-                            <a data-toggle="tab" href="#hotpot" class="nav-link text-dark m-0 py-3" href="#">Hot Pot</a>
+                        <li class="nav-item">
+                            <a data-toggle="tab" href="#hotpot" class="nav-link text-dark m-0 py-3 border-bottom"
+                                href="#">Hot Pot</a>
                         </li>
-                        <li class="nav-item border-bottom">
-                            <a data-toggle="tab" href="#salads" class="nav-link text-dark m-0 py-3" href="#">Salads</a>
+                        <li class="nav-item">
+                            <a data-toggle="tab" href="#salads" class="nav-link text-dark m-0 py-3 border-bottom"
+                                href="#">Salads</a>
                         </li>
-                        <li class="nav-item border-bottom">
-                            <a data-toggle="tab" href="#ricenoodlebowl" class="nav-link text-dark m-0 py-3"
-                                href="#">Rice Noodle Bowl</a>
+                        <li class="nav-item">
+                            <a data-toggle="tab" href="#ricenoodlebowl"
+                                class="nav-link text-dark m-0 py-3 border-bottom" href="#">Rice Noodle Bowl</a>
                         </li>
-                        <li class="nav-item border-bottom">
-                            <a data-toggle="tab" href="#friedrice" class="nav-link text-dark m-0 py-3" href="#">Fried
+                        <li class="nav-item">
+                            <a data-toggle="tab" href="#friedrice" class="nav-link text-dark m-0 py-3 border-bottom"
+                                href="#">Fried
                                 Rice</a>
                         </li>
-                        <li class="nav-item border-bottom">
-                            <a data-toggle="tab" href="#porridge" class="nav-link text-dark m-0 py-3"
+                        <li class="nav-item">
+                            <a data-toggle="tab" href="#porridge" class="nav-link text-dark m-0 py-3 border-bottom"
                                 href="#">Porridge</a>
                         </li>
-                        <li class="nav-item border-bottom">
-                            <a data-toggle="tab" href="#steamedbrokenriceplate" class="nav-link text-dark m-0 py-3"
-                                href="#">Steamed Broken
+                        <li class="nav-item">
+                            <a data-toggle="tab" href="#steamedbrokenriceplate"
+                                class="nav-link text-dark m-0 py-3 border-bottom" href="#">Steamed Broken
                                 Rice Plate</a>
                         </li>
-                        <li class="nav-item border-bottom">
-                            <a data-toggle="tab" href="#ricenoodlesoup" class="nav-link text-dark m-0 py-3"
-                                href="#">Rice Noodle Soup</a>
+                        <li class="nav-item">
+                            <a data-toggle="tab" href="#ricenoodlesoup"
+                                class="nav-link text-dark m-0 py-3 border-bottom" href="#">Rice Noodle Soup</a>
                         </li>
-                        <li class="nav-item border-bottom">
-                            <a data-toggle="tab" href="#specialities" class="nav-link text-dark m-0 py-3"
+                        <li class="nav-item">
+                            <a data-toggle="tab" href="#specialities" class="nav-link text-dark m-0 py-3 border-bottom"
                                 href="#">Specialities</a>
                         </li>
-                        <li class="nav-item border-bottom">
-                            <a data-toggle="tab" href="#vegetarian" class="nav-link text-dark m-0 py-3"
+                        <li class="nav-item">
+                            <a data-toggle="tab" href="#vegetarian" class="nav-link text-dark m-0 py-3 border-bottom"
                                 href="#">Vegetarian</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-8">
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div id="appetizers" class="container tab-pane active"><br>
-                            <div class="row">
-                                <div class="col-12">
-                                    <h3 class="c-name text-success">Appetizers</h3>
-                                </div>
-                                <div class="col-12">
-                                    <img class="c-img img-fluid" src="./media/menus/appetizers/appetizers.jpg"
-                                        alt="appetizers">
-                                </div>
-                                <div class="col-12">
-                                    <p class="c-desc text-success">All plates served with vegetables, fish sauce and a
-                                        bowl of soup</p>
-                                </div>
+                        </li> -->
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <!-- Tab panes -->
+                <div class="tab-content" id="menu-items">
+                    <div id="appetizers" class="container-fluid tab-pane active"><br>
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="c-name text-success">Appetizers</h3>
                             </div>
-
-                            <div class="row">
-                                <div class="col-10">
-                                    <p class="p-name">A1. Goi Cuon - Steamed Spring Roll (2pcs)
-                                        <span class="p-img"><i class="fas fa-camera text-success" data-toggle="modal"
-                                                data-target="#a1"></i></span>
-                                    <div class="modal fade" id="a1">
-                                        <div class="modal-dialog modal-dialog-centered">
-                                            <div class="modal-content">
-                                                <img class="img-fluid" src="./media/menus/appetizers/a1.jpg" alt="A1">
-                                            </div>
+                            <div class="col-12">
+                                <img class="c-img img-fluid" src="./media/menus/appetizers/a0.jpg" alt="appetizers">
+                            </div>
+                            <div class="col-12">
+                                <p class="c-desc text-success">All plates served with vegetables, fish sauce and a
+                                    bowl of soup</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-10">
+                                <p class="p-name">A1. Goi Cuon - Steamed Spring Roll (2pcs)
+                                    <span class="p-img"><i class="fas fa-camera text-success" data-toggle="modal"
+                                            data-target="#a1"></i></span>
+                                <div class="modal fade" id="a1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <img class="img-fluid" src="./media/menus/appetizers/a1.jpg" alt="A1">
                                         </div>
                                     </div>
-                                    </p>
-                                    <p class="p-desc">Your choice of: Steamed pork, beef, chicken, shrimp, tofu, or
-                                        grilled meat (+1)</p>
                                 </div>
-                                <div class="col-2">
-                                    <p class="p-price">6.95</p>
-                                </div>
+                                </p>
+                                <p class="p-desc">Your choice of: Steamed pork, beef, chicken, shrimp, tofu, or
+                                    grilled meat (+1)</p>
                             </div>
-                            <div class="row">
-                                <div class="col-10">
-                                    <p class="p-name">A2. Cha Gio - Crispy Vietnamese Eggroll (6pcs)
-                                        <span class="p-img"><i class="fas fa-camera text-success" data-toggle="modal"
-                                                data-target="#a2"></i></span>
-                                    <div class="modal fade" id="a2">
-                                        <div class="modal-dialog modal-dialog-centered">
-                                            <div class="modal-content">
-                                                <img class="img-fluid" src="./media/menus/appetizers/a2.jpg" alt="A2">
-                                            </div>
+                            <div class="col-2">
+                                <p class="p-price">6.95</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-10">
+                                <p class="p-name">A2. Cha Gio - Crispy Vietnamese Eggroll (6pcs)
+                                    <span class="p-img"><i class="fas fa-camera text-success" data-toggle="modal"
+                                            data-target="#a2"></i></span>
+                                <div class="modal fade" id="a2">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <img class="img-fluid" src="./media/menus/appetizers/a2.jpg" alt="A2">
                                         </div>
                                     </div>
-                                    </p>
-                                    <p class="p-desc">Your choice of: Steamed pork, beef, chicken, shrimp, tofu, or
-                                        grilled meat (+1)</p>
                                 </div>
-                                <div class="col-2">
-                                    <p class="p-price">8.95</p>
-                                </div>
+                                </p>
+                                <p class="p-desc">Your choice of: Steamed pork, beef, chicken, shrimp, tofu, or
+                                    grilled meat (+1)</p>
                             </div>
+                            <div class="col-2">
+                                <p class="p-price">8.95</p>
+                            </div>
+                        </div>
 
 
+                    </div>
+                    <div id="kidmeals" class="container-fluid tab-pane fade"><br>
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="c-name text-success">Kid Meals</h3>
+                            </div>
+                            <div class="col-12">
+                                <img class="c-img img-fluid" src="./media/menus/appetizers/a0.jpg" alt="appetizers">
+                            </div>
+                            <div class="col-12">
+                                <p class="c-desc text-success">All plates served with vegetables, fish sauce and a
+                                    bowl of soup</p>
+                            </div>
                         </div>
-                        <div id="kidmeals" class="container tab-pane fade"><br>
-                            <h3>Kid Meals</h3>
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.</p>
+                    </div>
+                    <div id="wraps" class="container-fluid tab-pane fade"><br>
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="c-name text-success">Wraps</h3>
+                            </div>
+                            <div class="col-12">
+                                <img class="c-img img-fluid" src="./media/menus/appetizers/a0.jpg" alt="appetizers">
+                            </div>
+                            <div class="col-12">
+                                <p class="c-desc text-success">All plates served with vegetables, fish sauce and a
+                                    bowl of soup</p>
+                            </div>
                         </div>
-                        <div id="wraps" class="container tab-pane fade"><br>
-                            <h3>Wraps</h3>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                laudantium, totam rem aperiam.</p>
-                        </div>
-                        <div id="hotpot" class="container tab-pane fade"><br>
-                            <h3>Hot Pot</h3>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                laudantium, totam rem aperiam.</p>
-                        </div>
-                        <div id="salads" class="container tab-pane fade"><br>
-                            <h3>Salads</h3>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                laudantium, totam rem aperiam.</p>
-                        </div>
-                        <div id="ricenoodlebowl" class="container tab-pane fade"><br>
-                            <h3>Rice Noodle Bowl</h3>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                laudantium, totam rem aperiam.</p>
-                        </div>
-                        <div id="friedrice" class="container tab-pane fade"><br>
-                            <h3>Fried Rice</h3>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                laudantium, totam rem aperiam.</p>
-                        </div>
-                        <div id="porridge" class="container tab-pane fade"><br>
-                            <h3>Porridge</h3>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                laudantium, totam rem aperiam.</p>
-                        </div>
-                        <div id="steamedbrokenriceplate" class="container tab-pane fade"><br>
-                            <h3>Steamed Broken Rice Plate</h3>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                laudantium, totam rem aperiam.</p>
-                        </div>
-                        <div id="ricenoodlesoup" class="container tab-pane fade"><br>
-                            <h3>Rice Noodle Soup</h3>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                laudantium, totam rem aperiam.</p>
-                        </div>
-                        <div id="specialities" class="container tab-pane fade"><br>
-                            <h3>Specialities</h3>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                laudantium, totam rem aperiam.</p>
-                        </div>
-                        <div id="vegetarian" class="container tab-pane fade"><br>
-                            <h3>Vegetarian</h3>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                laudantium, totam rem aperiam.</p>
-                        </div>
+                    <div id="hotpot" class="container-fluid tab-pane fade"><br>
+                        <h3>Hot Pot</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam.</p>
+                    </div>
+                    <div id="salads" class="container-fluid tab-pane fade"><br>
+                        <h3>Salads</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam.</p>
+                    </div>
+                    <div id="ricenoodlebowl" class="container-fluid tab-pane fade"><br>
+                        <h3>Rice Noodle Bowl</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam.</p>
+                    </div>
+                    <div id="friedrice" class="container-fluid tab-pane fade"><br>
+                        <h3>Fried Rice</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam.</p>
+                    </div>
+                    <div id="porridge" class="container-fluid tab-pane fade"><br>
+                        <h3>Porridge</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam.</p>
+                    </div>
+                    <div id="steamedbrokenriceplate" class="container-fluid tab-pane fade"><br>
+                        <h3>Steamed Broken Rice Plate</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam.</p>
+                    </div>
+                    <div id="ricenoodlesoup" class="container-fluid tab-pane fade"><br>
+                        <h3>Rice Noodle Soup</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam.</p>
+                    </div>
+                    <div id="specialities" class="container-fluid tab-pane fade"><br>
+                        <h3>Specialities</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam.</p>
+                    </div>
+                    <div id="vegetarian" class="container-fluid tab-pane fade"><br>
+                        <h3>Vegetarian</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam.</p>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- </div> -->
     </div>
     <!-- Contact section -->
-    <div class="container-fluid contact-section">
+    <div id="contact" class="container-fluid my-3 contact-section">
         <div class="row">
-            <div class="col-12">
-                <div id="googleMap" style="height:50vh;"></div>
+            <div class="col-md-12">
+                <h2 class="text-center text-success mt-5">Contact Us</h2>
+            </div>
+            <div class="col-md-8">
+                <div id="googleMap"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="jumbotron m-0">
+                    <div class="container-fluid text-center text-dark">
+                        <div class="row">
+                            <div class="col-12">
+                                <p><i class="fas fa-map-marker-alt text-success"></i></p>
+                                <p>Pho Le Aurora</p>
+                                <p><a href="https://goo.gl/maps/D4HvZm6A4mU6Cstp8">2719 S Parker Rd, Aurora, CO
+                                        80014</a></p>
+                            </div>
+                            <div class="col-12">
+                                <p><i class="fas fa-phone-volume text-success"></i></p>
+                                <p>Call Us</p>
+                                <p class="contact"><a href="tel:303-750-3007">(303) 750-3007</a></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-     <!-- Jumbotron section -->
-     <div class="container-fluid hour-section">
-        <div class="jumbotron m-0">
-            <div class="container-fluid text-center text-dark">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <p>Copyright @ 2019 Pho Le Aurora. All Rights Reserved.</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <span><i class="fab fa-facebook-f"></i></i></span>
-                        <span><i class="fab fa-google"></i></i></span>
-                        <span><i class="fab fa-yelp"></i></i></span>
-                    </div>
-                    <div class="col-sm-4">
-                        <p>Created by Thanh Pham.</p>
-                    </div>
-                </div>
+    <!-- Footer section -->
+    <div id="footer" class="container-fluid my-3 footer-section">
+        <div class="row d-flex align-items-end text-center bg-light">
+            <div class="col-sm-4">
+                <a class="navbar-brand p-0" href="#">
+                    <img src="media/logos/logo.png" alt="logo">
+                </a>
+                <p>Copyright @ 2019 Pho Le Aurora. All Rights Reserved.</p>
+            </div>
+            <div class="col-sm-4">
+                <p>
+                    <span class="d-inline-block mx-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </span>
+                    <span class="d-inline-block mx-3">
+                        <a href="#"><i class="fab fab fa-google"></i></a>
+                    </span>
+                    <span class="d-inline-block mx-3">
+                        <a href="#"><i class="fab fa-yelp"></i></a>
+                    </span>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <p>Created by <a href="#">Thanh Pham</a></p>
             </div>
         </div>
     </div>

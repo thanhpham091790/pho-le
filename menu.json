@@ -1,0 +1,63 @@
+{
+    "categories":[
+        {
+            "cid": "appetizers",
+            "cename": "Appetizers",
+            "cvname": "Mon Khai Vi",
+            "cimage": "./media/menus/appetizers/a0.jpg",
+            "cposition": "0",
+            "cdesc": "All plates served with vegetables, fish sauce and a bowl of soup",
+            "cnote": "Please let us know if you have any food allergies",
+            "cproducts": [
+                {
+                    "pid": "a1",
+                    "pename": "Steamed Spring Roll",
+                    "pvname": "Gỏi Cuốn",
+                    "pimage": "./media/menus/appetizers/a1.jpg",
+                    "ppieces": "2pcs",
+                    "pdesc": "Your choice of: Steamed pork, beef, chicken, shrimp, tofu or grilled meat (+$1)",
+                    "prices": [
+                        {
+                            "size": "",
+                            "price": "5"
+                        }
+                    ]
+                },
+                {
+                    "pid": "a2",
+                    "pename": "Fried Egg Rolls",
+                    "pvname": "Chả Giò",
+                    "pimage": "./media/menus/appetizers/a2.jpg",
+                    "ppieces": "6pcs",
+                    "pdesc": "Steamed Rice Plate: choice of grilled meat: beef, pork, chicken, shrimp (+$1)",
+                    "prices": [
+                        {
+                            "size": "",
+                            "price": "8"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "cid": "kidmeals",
+            "cename": "Kid Meals",
+            "cvname": "Mon Tre Em",
+            "cimage": "./media/menus/appetizers/a0.jpg",
+            "cposition": "1",
+            "cdesc": "All plates served with vegetables, fish sauce and a bowl of soup",
+            "cnote": "Please let us know if you have any food allergies",
+            "cproducts": []
+        },
+        {
+            "cid": "wraps",
+            "cename": "Wraps",
+            "cvname": "Mon Cuon",
+            "cimage": "./media/menus/appetizers/a0.jpg",
+            "cposition": "2",
+            "cdesc": "All plates served with vegetables, fish sauce and a bowl of soup",
+            "cnote": "Please let us know if you have any food allergies",
+            "cproducts": []
+        }
+    ]
+}
