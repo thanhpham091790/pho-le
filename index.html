@@ -13,7 +13,8 @@
 
 <body>
     <!-- Navbar Section -->
-    <div class="container-fluid my-3 navbar-section">
+    <div class="container-fluid navbar-section">
+
         <nav class="navbar navbar-expand-sm p-0 navbar-light bg-light">
             <div class="container">
                 <!-- Brand/logo -->
@@ -43,7 +44,7 @@
         </nav>
     </div>
     <!-- Carousel Section -->
-    <div id="home" class="container-fluid my-3 home-section">
+    <div id="home" class="container-fluid home-section">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -54,19 +55,19 @@
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="./media/carousels/carousel5.jpg" alt="First slide">
                     <div class="carousel-cap">
-                        <a class="btn bg-light text-success" href="./Pho_Le_Menu.pdf" role="button"><h3>PDF Menu</h3></a>
+                        <a class="btn bg-transparent text-success" href="./Pho_Le_Menu.pdf" role="button"><h3><i class="far fa-file-pdf"></i></h3></a>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="./media/carousels/carousel3.jpg" alt="Third slide">
                     <div class="carousel-cap">
-                        <a class="btn bg-light text-success" href="./Pho_Le_Menu.pdf" role="button"><h3>PDF Menu</h3></a>
+                        <a class="btn bg-transparent text-success" href="./Pho_Le_Menu.pdf" role="button"><h3><i class="far fa-file-pdf"></i></h3></a>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="./media/carousels/carousel4.jpg" alt="Third slide">
                     <div class="carousel-cap">
-                        <a class="btn bg-light text-success" href="./Pho_Le_Menu.pdf" role="button"><h3>PDF Menu</h3></a>
+                        <a class="btn bg-transparent text-success" href="./Pho_Le_Menu.pdf" role="button"><h3><i class="far fa-file-pdf"></i></h3></a>
                     </div>
                 </div>
             </div>
@@ -81,8 +82,8 @@
         </div>
     </div>
     <!-- Jumbotron section -->
-    <div id="note" class="container-fluid my-3 note-section">
-        <div class="jumbotron m-0">
+    <div id="note" class="container-fluid note-section">
+        <div class="jumbotron m-0 py-3">
             <div class="container text-center text-dark">
                 <div class="row">
                     <div class="col-12">
@@ -96,21 +97,21 @@
         </div>
     </div>
     <!-- About section -->
-    <div id="about" class="container-fluid my-3 about-section">
+    <div id="about" class="container-fluid about-section">
         <div class="row">
-            <div class="col-md-6 align-self-center">
+            <div class="col-md-6 py-3 align-self-center">
                 <img class="img-fluid" src="./media/carousels/carousel2.jpg" alt="About Us">
             </div>
-            <div class="col-md-6 align-self-center">
-                <h2 class="text-center text-success mt-5">Welcome</h2>
+            <div class="col-md-6 py-3 align-self-center">
+                <h2 class="text-center text-success">Welcome</h2>
                 <div id="about-info"></div>
             </div>
         </div>
     </div>
     <!-- Menu section -->
-    <div id="menu" class="container-fluid my-3 menu-section">
+    <div id="menu" class="container-fluid menu-section">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 py-3">
                 <!-- Nav tabs -->
                 <ul class="nav flex-column nav-tabs text-center bg-light">
                     <li class="nav-item">
@@ -122,216 +123,27 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link text-dark m-0 py-3 border-bottom dropdown-toggle d-md-none"
                             data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                            aria-expanded="false"></a>
+                            aria-expanded="false" id="menu-active"></a>
                         <div class="dropdown-menu d-md-block" id="menu-nav"></div>
                     </li>
-                    <!-- <li class="nav-item">
-                            <a data-toggle="tab" href="#appetizers"
-                                class="nav-link text-dark m-0 py-3 border-bottom active" href="#">
-                                Appetizers
-                                <span class="d-block">Mon Khai Vi</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a data-toggle="tab" href="#kidmeals" class="nav-link text-dark m-0 py-3 border-bottom"
-                                href="#">
-                                Kid Meals
-                                <span class="d-block">Under 12 Year Old</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a data-toggle="tab" href="#wraps" class="nav-link text-dark m-0 py-3 border-bottom"
-                                href="#">Wraps</a>
-                        </li>
-                        <li class="nav-item">
-                            <a data-toggle="tab" href="#hotpot" class="nav-link text-dark m-0 py-3 border-bottom"
-                                href="#">Hot Pot</a>
-                        </li>
-                        <li class="nav-item">
-                            <a data-toggle="tab" href="#salads" class="nav-link text-dark m-0 py-3 border-bottom"
-                                href="#">Salads</a>
-                        </li>
-                        <li class="nav-item">
-                            <a data-toggle="tab" href="#ricenoodlebowl"
-                                class="nav-link text-dark m-0 py-3 border-bottom" href="#">Rice Noodle Bowl</a>
-                        </li>
-                        <li class="nav-item">
-                            <a data-toggle="tab" href="#friedrice" class="nav-link text-dark m-0 py-3 border-bottom"
-                                href="#">Fried
-                                Rice</a>
-                        </li>
-                        <li class="nav-item">
-                            <a data-toggle="tab" href="#porridge" class="nav-link text-dark m-0 py-3 border-bottom"
-                                href="#">Porridge</a>
-                        </li>
-                        <li class="nav-item">
-                            <a data-toggle="tab" href="#steamedbrokenriceplate"
-                                class="nav-link text-dark m-0 py-3 border-bottom" href="#">Steamed Broken
-                                Rice Plate</a>
-                        </li>
-                        <li class="nav-item">
-                            <a data-toggle="tab" href="#ricenoodlesoup"
-                                class="nav-link text-dark m-0 py-3 border-bottom" href="#">Rice Noodle Soup</a>
-                        </li>
-                        <li class="nav-item">
-                            <a data-toggle="tab" href="#specialities" class="nav-link text-dark m-0 py-3 border-bottom"
-                                href="#">Specialities</a>
-                        </li>
-                        <li class="nav-item">
-                            <a data-toggle="tab" href="#vegetarian" class="nav-link text-dark m-0 py-3 border-bottom"
-                                href="#">Vegetarian</a>
-                        </li> -->
                 </ul>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 py-3">
                 <!-- Tab panes -->
-                <div class="tab-content" id="menu-items">
-                    <!-- <div id="appetizers" class="container-fluid tab-pane active">
-                        <div class="row">
-                            <div class="col-12">
-                                <h3 class="c-name text-success">Appetizers</h3>
-                            </div>
-                            <div class="col-12">
-                                <img class="c-img img-fluid" src="./media/menus/appetizers/a0.jpg" alt="appetizers">
-                            </div>
-                            <div class="col-12">
-                                <p class="c-desc text-success">All plates served with vegetables, fish sauce and a
-                                    bowl of soup</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-8">
-                                <p class="p-name">A1. Goi Cuon - Steamed Spring Roll (2pcs)
-                                    <span class="p-img"><i class="fas fa-camera text-success" data-toggle="modal"
-                                            data-target="#a1"></i></span>
-                                <div class="modal fade" id="a1">
-                                    <div class="modal-dialog modal-dialog-centered">
-                                        <div class="modal-content">
-                                            <img class="img-fluid" src="./media/menus/appetizers/a1.jpg" alt="A1">
-                                        </div>
-                                    </div>
-                                </div>
-                                </p>
-                                <p class="p-desc">Your choice of: Steamed pork, beef, chicken, shrimp, tofu, or
-                                    grilled meat (+1)</p>
-                            </div>
-                            <div class="col-4">
-                                <div class="p-price">
-                                    <p>6.95</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-8">
-                                <p class="p-name">A2. Cha Gio - Crispy Vietnamese Eggroll (6pcs)
-                                    <span class="p-img"><i class="fas fa-camera text-success" data-toggle="modal"
-                                            data-target="#a2"></i></span>
-                                <div class="modal fade" id="a2">
-                                    <div class="modal-dialog modal-dialog-centered">
-                                        <div class="modal-content">
-                                            <img class="img-fluid" src="./media/menus/appetizers/a2.jpg" alt="A2">
-                                        </div>
-                                    </div>
-                                </div>
-                                </p>
-                                <p class="p-desc">Your choice of: Steamed pork, beef, chicken, shrimp, tofu, or
-                                    grilled meat (+1)</p>
-                            </div>
-                            <div class="col-4">
-                                <div class="p-price">
-                                    <p>6.00 (Half)</p>
-                                    <p>8.00 (Full)</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="kidmeals" class="container-fluid tab-pane fade">
-                        <div class="row">
-                            <div class="col-12">
-                                <h3 class="c-name text-success">Kid Meals</h3>
-                            </div>
-                            <div class="col-12">
-                                <img class="c-img img-fluid" src="./media/menus/appetizers/a0.jpg" alt="appetizers">
-                            </div>
-                            <div class="col-12">
-                                <p class="c-desc text-success">All plates served with vegetables, fish sauce and a
-                                    bowl of soup</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="wraps" class="container-fluid tab-pane fade">
-                        <div class="row">
-                            <div class="col-12">
-                                <h3 class="c-name text-success">Wraps</h3>
-                            </div>
-                            <div class="col-12">
-                                <img class="c-img img-fluid" src="./media/menus/appetizers/a0.jpg" alt="appetizers">
-                            </div>
-                            <div class="col-12">
-                                <p class="c-desc text-success">All plates served with vegetables, fish sauce and a
-                                    bowl of soup</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="hotpot" class="container-fluid tab-pane fade">
-                        <h3>Hot Pot</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam.</p>
-                    </div>
-                    <div id="salads" class="container-fluid tab-pane fade">
-                        <h3>Salads</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam.</p>
-                    </div>
-                    <div id="ricenoodlebowl" class="container-fluid tab-pane fade">
-                        <h3>Rice Noodle Bowl</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam.</p>
-                    </div>
-                    <div id="friedrice" class="container-fluid tab-pane fade">
-                        <h3>Fried Rice</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam.</p>
-                    </div>
-                    <div id="porridge" class="container-fluid tab-pane fade">
-                        <h3>Porridge</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam.</p>
-                    </div>
-                    <div id="steamedbrokenriceplate" class="container-fluid tab-pane fade">
-                        <h3>Steamed Broken Rice Plate</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam.</p>
-                    </div>
-                    <div id="ricenoodlesoup" class="container-fluid tab-pane fade">
-                        <h3>Rice Noodle Soup</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam.</p>
-                    </div>
-                    <div id="specialities" class="container-fluid tab-pane fade">
-                        <h3>Specialities</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam.</p>
-                    </div>
-                    <div id="vegetarian" class="container-fluid tab-pane fade">
-                        <h3>Vegetarian</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam.</p>
-                    </div> -->
-                </div>
+                <div class="tab-content" id="menu-items"></div>
             </div>
         </div>
     </div>
     <!-- Contact section -->
-    <div id="contact" class="container-fluid my-3 contact-section">
+    <div id="contact" class="container-fluid contact-section">
         <div class="row">
-            <div class="col-md-12">
-                <h2 class="text-center text-success mt-5">Contact Us</h2>
+            <div class="col-md-12 py-3">
+                <h2 class="text-center text-success">Contact Us</h2>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 py-3">
                 <div id="googleMap" style="min-height: 50vh;"></div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 py-3">
                 <div class="jumbotron m-0">
                     <div class="container-fluid text-center text-dark">
                         <div class="row">
@@ -353,7 +165,7 @@
         </div>
     </div>
     <!-- Footer section -->
-    <div id="footer" class="container-fluid my-3 footer-section">
+    <div id="footer" class="container-fluid footer-section">
         <div class="row d-flex align-items-end text-center bg-light">
             <div class="col-md-4">
                 <a class="navbar-brand p-0" href="#">

@@ -19,7 +19,7 @@
 }
 
 .navbar-section .navbar a {
-    font-family: BarlowCondensed-ExtraBold;
+    font-family: BarlowSemiCondensed-SemiBold;
     font-style: normal;
     font-weight: 800;
     font-size: 24px;
@@ -67,7 +67,7 @@
 .about-section h2 {
     font-family: Allura-Regular;
     line-height: 100%;
-    font-size: 80px;
+    font-size: 54px;
     text-transform: capitalize;
 }
 
@@ -127,6 +127,8 @@
     width: 100%;
     text-align: center;
     border: none;
+    position: initial !important;
+    transform: none !important;
 }
 
 .nav-tabs .nav-item .nav-link.active, .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-item .dropdown-item.active, .nav-tabs .nav-item .dropdown-item:hover {
@@ -158,7 +160,6 @@
     line-height: 22px;
     text-decoration: none;
     text-transform: capitalize;
-    padding: 7px 0;
     cursor: pointer;
 }
 
@@ -170,7 +171,7 @@
 .contact-section h2 {
     font-family: Allura-Regular;
     line-height: 100%;
-    font-size: 80px;
+    font-size: 54px;
     text-transform: capitalize;
 }
 #googleMap{

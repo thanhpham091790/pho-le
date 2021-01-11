@@ -36,8 +36,8 @@
                     "pdesc": "Your choice of: Steamed pork, beef, chicken, shrimp, tofu or grilled meat (+$1)",
                     "prices": [
                         {
-                            "size": "",
-                            "price": "5.00"
+                            "price": "5",
+                            "size": ""
                         }
                     ]
                 },
@@ -47,15 +47,113 @@
                     "pvname": "Chả Giò",
                     "pimage": "./media/menus/appetizers/a2.jpg",
                     "ppieces": "6pcs",
-                    "pdesc": "Steamed Rice Plate: choice of grilled meat: beef, pork, chicken, shrimp (+$1)",
+                    "pdesc": "",
                     "prices": [
                         {
-                            "price": "6.00",
-                            "size": "Half"
+                            "price": "6",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "a3",
+                    "pename": "Fried Shrimp Rolls",
+                    "pvname": "Tôm Cuốn",
+                    "pimage": "./media/menus/appetizers/a3.jpg",
+                    "ppieces": "6pcs",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "9",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "a4",
+                    "pename": "Asian Wings",
+                    "pvname": "Cánh Gà Chiên",
+                    "pimage": "./media/menus/appetizers/a4.jpg",
+                    "ppieces": "6pcs",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "6",
+                            "size": "5 Wings"
                         },
                         {
-                            "price": "8.00",
-                            "size": "Full"
+                            "price": "10",
+                            "size": "10 Wings"
+                        }
+                    ]
+                },
+                {
+                    "pid": "a5",
+                    "pename": "Grilled Mussels",
+                    "pvname": "Chem Chép Nướng",
+                    "pimage": "./media/menus/appetizers/a5.jpg",
+                    "ppieces": "6pcs",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "9",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "a6",
+                    "pename": "Cheese Wonton",
+                    "pvname": "Hoành Thánh Chiên",
+                    "pimage": "./media/menus/appetizers/a6.jpg",
+                    "ppieces": "6pcs",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "5",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "a7",
+                    "pename": "Vietnamese Sandwich",
+                    "pvname": "Bánh Mì",
+                    "pimage": "./media/menus/appetizers/a7.jpg",
+                    "ppieces": "",
+                    "pdesc": "Your choice of: Grilled pork, beef, chicken, shrimp, tofu, Spam & egg. Combining 2 or more types of meat (+$1)",
+                    "prices": [
+                        {
+                            "price": "6.5",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "a8",
+                    "pename": "Korean BBQ Taco",
+                    "pvname": "",
+                    "pimage": "./media/menus/appetizers/a8.jpg",
+                    "ppieces": "",
+                    "pdesc": "Choice of: pork, beef, chicken, shrimp (+$1). Combining 2 types of meat (+$1)",
+                    "prices": [
+                        {
+                            "price": "3.5",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "a9",
+                    "pename": "Vietnamese Pancake",
+                    "pvname": "Bánh xèo",
+                    "pimage": "./media/menus/appetizers/a9.jpg",
+                    "ppieces": "",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "7",
+                            "size": ""
                         }
                     ]
                 }
@@ -64,22 +162,900 @@
         {
             "cid": "kidmeals",
             "cename": "Kid Meals",
-            "cvname": "Under 12 years old",
-            "cimage": "./media/menus/appetizers/a0.jpg",
+            "cvname": "Món ăn trẻ em",
+            "cimage": "./media/menus/kidmeals/k0.jpg",
             "cposition": "1",
-            "cdesc": "All plates served with vegetables, fish sauce and a bowl of soup",
+            "cdesc": "12 years or under",
             "cnote": "Please let us know if you have any food allergies",
-            "cproducts": []
+            "cproducts": [
+                {
+                    "pid": "k1",
+                    "pename": "Kid Pho",
+                    "pvname": "Phở trẻ em",
+                    "pimage": "./media/menus/kidmeals/k1.jpg",
+                    "ppieces": "",
+                    "pdesc": "Choice of Meat: Steak, Brisket, Meatballs, Shrimp (+$1.00)",
+                    "prices": [
+                        {
+                            "price": "6",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "k2",
+                    "pename": "Steamed Rice Plate",
+                    "pvname": "Cơm trẻ em",
+                    "pimage": "./media/menus/kidmeals/k2.jpg",
+                    "ppieces": "",
+                    "pdesc": "Choice of Meat: Steak, Brisket, Meatballs, Shrimp (+$1.00)",
+                    "prices": [
+                        {
+                            "price": "6",
+                            "size": ""
+                        }
+                    ]
+                }
+            ]
         },
         {
             "cid": "wraps",
             "cename": "Wraps",
             "cvname": "Món cuốn",
-            "cimage": "./media/menus/appetizers/a0.jpg",
+            "cimage": "./media/menus/wraps/w0.jpg",
             "cposition": "2",
-            "cdesc": "All plates served with vegetables, fish sauce and a bowl of soup",
+            "cdesc": "",
             "cnote": "Please let us know if you have any food allergies",
-            "cproducts": []
+            "cproducts": [
+                {
+                    "pid": "w1",
+                    "pename": "Grilled Chicken & Beef",
+                    "pvname": "Gà & Bò Nướng",
+                    "pimage": "./media/menus/wraps/w1.jpg",
+                    "ppieces": "",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "28",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "w2",
+                    "pename": "Combination Wrap",
+                    "pvname": "Món Cuốn Đặc Biệt",
+                    "pimage": "./media/menus/wraps/w2.jpg",
+                    "ppieces": "",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "32",
+                            "size": "Half"
+                        },
+                        {
+                            "price": "45",
+                            "size": "Full"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "cid": "hotpot",
+            "cename": "Hot Pot",
+            "cvname": "Món Lẩu",
+            "cimage": "./media/menus/hotpot/l0.jpg",
+            "cposition": "3",
+            "cdesc": "",
+            "cnote": "Please let us know if you have any food allergies",
+            "cproducts": [
+                {
+                    "pid": "l1",
+                    "pename": "Goat Hot Pot",
+                    "pvname": "Lẩu Dê",
+                    "pimage": "./media/menus/hotpot/l1.jpg",
+                    "ppieces": "",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "32",
+                            "size": "M"
+                        },
+                        {
+                            "price": "50",
+                            "size": "L"
+                        }
+                    ]
+                },
+                {
+                    "pid": "l2",
+                    "pename": "Ox Tail Hot Pot",
+                    "pvname": "Lẩu Đuôi Bò",
+                    "pimage": "./media/menus/hotpot/l2.jpg",
+                    "ppieces": "",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "32",
+                            "size": "M"
+                        },
+                        {
+                            "price": "50",
+                            "size": "L"
+                        }
+                    ]
+                },
+                {
+                    "pid": "l3",
+                    "pename": "Crispy Fried Catfish",
+                    "pvname": "Cá Chiên Xù",
+                    "pimage": "./media/menus/hotpot/l3.jpg",
+                    "ppieces": "",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "35",
+                            "size": "2.5-3lbs"
+                        },
+                        {
+                            "price": "50",
+                            "size": "3-4.5lbs"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "cid": "salads",
+            "cename": "Salads",
+            "cvname": "Món Gỏi",
+            "cimage": "./media/menus/salads/g0.jpg",
+            "cposition": "4",
+            "cdesc": "All Salads topped with peanut, fried onion",
+            "cnote": "Please let us know if you have any food allergies",
+            "cproducts": [
+                {
+                    "pid": "g1",
+                    "pename": "Chicken Salad",
+                    "pvname": "Gỏi Gà Xé Phay",
+                    "pimage": "./media/menus/salads/g1.jpg",
+                    "ppieces": "",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "9",
+                            "size": "Small"
+                        },
+                        {
+                            "price": "20",
+                            "size": "Family"
+                        }
+                    ]
+                },
+                {
+                    "pid": "g2",
+                    "pename": "Pork & Shrimp Salad",
+                    "pvname": "Gỏi Tôm Thịt",
+                    "pimage": "./media/menus/salads/g2.jpg",
+                    "ppieces": "",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "9",
+                            "size": "Small"
+                        },
+                        {
+                            "price": "20",
+                            "size": "Family"
+                        }
+                    ]
+                },
+                {
+                    "pid": "g3",
+                    "pename": "Squid Salad",
+                    "pvname": "Gỏi Mực",
+                    "pimage": "./media/menus/salads/g3.jpg",
+                    "ppieces": "",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "9",
+                            "size": "Small"
+                        },
+                        {
+                            "price": "20",
+                            "size": "Family"
+                        }
+                    ]
+                },
+                {
+                    "pid": "g4",
+                    "pename": "Tamarind Beef Salad",
+                    "pvname": "Gỏi Bò Tái Me",
+                    "pimage": "./media/menus/salads/g4.jpg",
+                    "ppieces": "",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "9",
+                            "size": "Small"
+                        },
+                        {
+                            "price": "20",
+                            "size": "Family"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "cid": "ricenoodebowl",
+            "cename": "Rice Noodle Bowl",
+            "cvname": "Món Bún",
+            "cimage": "./media/menus/ricenoodebowl/b0.jpg",
+            "cposition": "5",
+            "cdesc": "Choice of: egg rolls, pork, beef, chicken, shrimp (+$1).",
+            "cnote": "Please let us know if you have any food allergies",
+            "cproducts": [
+                {
+                    "pid": "b1",
+                    "pename": "Grilled Meat Noodle Bowl",
+                    "pvname": "Bún Thịt Nướng",
+                    "pimage": "./media/menus/ricenoodebowl/b1.jpg",
+                    "ppieces": "",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "12",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "b2",
+                    "pename": "Combination Noodle Bowl",
+                    "pvname": "Bún Đặc Biệt",
+                    "pimage": "./media/menus/ricenoodebowl/b2.jpg",
+                    "ppieces": "",
+                    "pdesc": "Egg rolls, pork, beef, chicken, shrimp",
+                    "prices": [
+                        {
+                            "price": "13",
+                            "size": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "cid": "friedrice",
+            "cename": "Fried Rice",
+            "cvname": "Cơm Chiên",
+            "cimage": "./media/menus/friedrice/fr0.jpg",
+            "cposition": "6",
+            "cdesc": "",
+            "cnote": "Please let us know if you have any food allergies",
+            "cproducts": [
+                {
+                    "pid": "fr1",
+                    "pename": "Meat Fried Rice",
+                    "pvname": "Cơm chiên thịt",
+                    "pimage": "./media/menus/friedrice/fr1.jpg",
+                    "ppieces": "",
+                    "pdesc": "Your choice of meat: pork, beef, chicken, shrimp (+$1)",
+                    "prices": [
+                        {
+                            "price": "12",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "fr2",
+                    "pename": "Combination Fried Rice",
+                    "pvname": " Cơm Chiên Đặc Biệt",
+                    "pimage": "./media/menus/friedrice/fr2.jpg",
+                    "ppieces": "",
+                    "pdesc": "Pork, beef, chicken, shrimp (+$1)",
+                    "prices": [
+                        {
+                            "price": "13",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "fr3",
+                    "pename": "Seafood Fried Rice",
+                    "pvname": "Cơm chiên hải sản",
+                    "pimage": "./media/menus/friedrice/fr3.jpg",
+                    "ppieces": "",
+                    "pdesc": "Shrimp, squid, fish ball, fish meat, mussels",
+                    "prices": [
+                        {
+                            "price": "13",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "fr4",
+                    "pename": "Salted Fish Fried Rice",
+                    "pvname": "Cơm chiên cá mặn",
+                    "pimage": "./media/menus/friedrice/fr4.jpg",
+                    "ppieces": "",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "13",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "fr5",
+                    "pename": "Ox Tail Fried Rice",
+                    "pvname": "Cơm chiên đuôi bò",
+                    "pimage": "./media/menus/friedrice/fr5.jpg",
+                    "ppieces": "",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "14",
+                            "size": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "cid": "porridge",
+            "cename": "Porridge",
+            "cvname": "Món Cháo",
+            "cimage": "./media/menus/porridge/por0.jpg",
+            "cposition": "7",
+            "cdesc": "",
+            "cnote": "Please let us know if you have any food allergies",
+            "cproducts": [
+                {
+                    "pid": "por1",
+                    "pename": "Meat Porridge",
+                    "pvname": "Cháo thịt",
+                    "pimage": "./media/menus/porridge/por1.jpg",
+                    "ppieces": "",
+                    "pdesc": "Choice of Free-range Chicken, Chicken Breast, Ground Beef, Fish",
+                    "prices": [
+                        {
+                            "price": "12",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "por2",
+                    "pename": "Seafood Porridge",
+                    "pvname": "Cháo hải sản",
+                    "pimage": "./media/menus/porridge/por2.jpg",
+                    "ppieces": "",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "13",
+                            "size": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "cid": "steamedrice",
+            "cename": "Steamed Broken Rice Plate",
+            "cvname": "Cơm Tấm",
+            "cimage": "./media/menus/steamedrice/c0.jpg",
+            "cposition": "8",
+            "cdesc": "",
+            "cnote": "Please let us know if you have any food allergies",
+            "cproducts": [
+                {
+                    "pid": "c1",
+                    "pename": "Grilled Meat Rice Plate",
+                    "pvname": "Cơm Thịt Nướng",
+                    "pimage": "./media/menus/steamedrice/c1.jpg",
+                    "ppieces": "",
+                    "pdesc": "Choice of pork, beef, chicken, shrimp (+$1), Korean short ribs (+$1)",
+                    "prices": [
+                        {
+                            "price": "12",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "c2",
+                    "pename": "Combination Rice Plate",
+                    "pvname": "Cơm đặc biệt",
+                    "pimage": "./media/menus/steamedrice/c2.jpg",
+                    "ppieces": "",
+                    "pdesc": "Pork, beef, chicken, shrimp",
+                    "prices": [
+                        {
+                            "price": "13",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "c3",
+                    "pename": "Pork Chop Rice Plate",
+                    "pvname": "Cơm sườn bì chả trứng",
+                    "pimage": "./media/menus/steamedrice/c3.jpg",
+                    "ppieces": "",
+                    "pdesc": "Pork chop, shredded pork skin, fried egg",
+                    "prices": [
+                        {
+                            "price": "13",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "c4",
+                    "pename": "Roti Chicken Rice Plate",
+                    "pvname": "Cơm Gà Roti",
+                    "pimage": "./media/menus/steamedrice/c4.jpg",
+                    "ppieces": "",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "12",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "c5",
+                    "pename": "Free-range Chicken Rice Plate",
+                    "pvname": "Cơm gà dai",
+                    "pimage": "./media/menus/steamedrice/c5.jpg",
+                    "ppieces": "",
+                    "pdesc": "Free-range Chicken with skin and bone-in",
+                    "prices": [
+                        {
+                            "price": "12",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "c6",
+                    "pename": "Shaking Beef Rice Plate",
+                    "pvname": "Cơm Bò Lúc Lắc",
+                    "pimage": "./media/menus/steamedrice/c6.jpg",
+                    "ppieces": "",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "15",
+                            "size": ""
+                        }
+                    ]
+                }
+
+            ]
+        },
+        {
+            "cid": "ricenoodlesoup",
+            "cename": "Beef Rice Noodle Soup",
+            "cvname": "Phở",
+            "cimage": "./media/menus/ricenoodlesoup/p0.jpg",
+            "cposition": "9",
+            "cdesc": "Any noodle substitute +$1 (clear or egg noodles). Extra Meats: $3. Extra noodles: $3",
+            "cnote": "Please let us know if you have any food allergies",
+            "cproducts": [
+                {
+                    "pid": "p1",
+                    "pename": "Customization",
+                    "pvname": "Phở tự chọn",
+                    "pimage": "./media/menus/ricenoodlesoup/p1.jpg",
+                    "ppieces": "",
+                    "pdesc": "Choice of meat: Steak, Brisket, Fat Brisket, Flank, Tendon, Trip",
+                    "prices": [
+                        {
+                            "price": "9",
+                            "size": "S"
+                        },
+                        {
+                            "price": "10",
+                            "size": "M"
+                        },
+                        {
+                            "price": "11",
+                            "size": "L"
+                        }
+                    ]
+                },
+                {
+                    "pid": "p2",
+                    "pename": "Combination",
+                    "pvname": "Phở đặc biệt",
+                    "pimage": "./media/menus/ricenoodlesoup/p2.jpg",
+                    "ppieces": "",
+                    "pdesc": "2 or more kinds of meat on P1.Custom Pho",
+                    "prices": [
+                        {
+                            "price": "10",
+                            "size": "S"
+                        },
+                        {
+                            "price": "11",
+                            "size": "M"
+                        },
+                        {
+                            "price": "12",
+                            "size": "L"
+                        }
+                    ]
+                },
+                {
+                    "pid": "p3",
+                    "pename": "Chicken Breast",
+                    "pvname": "Phở gà ức",
+                    "pimage": "./media/menus/ricenoodlesoup/p3.jpg",
+                    "ppieces": "",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "9",
+                            "size": "S"
+                        },
+                        {
+                            "price": "10",
+                            "size": "M"
+                        },
+                        {
+                            "price": "11",
+                            "size": "L"
+                        }
+                    ]
+                },
+                {
+                    "pid": "p4",
+                    "pename": "Meat balls",
+                    "pvname": "Phở bò viên",
+                    "pimage": "./media/menus/ricenoodlesoup/p4.jpg",
+                    "ppieces": "",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "9",
+                            "size": "S"
+                        },
+                        {
+                            "price": "10",
+                            "size": "M"
+                        },
+                        {
+                            "price": "11",
+                            "size": "L"
+                        }
+                    ]
+                },
+                {
+                    "pid": "p5",
+                    "pename": "Vegetarian",
+                    "pvname": "Phở chay",
+                    "pimage": "./media/menus/ricenoodlesoup/p5.jpg",
+                    "ppieces": "",
+                    "pdesc": "Vegetarian broth (+$1 any size)",
+                    "prices": [
+                        {
+                            "price": "10",
+                            "size": "S"
+                        },
+                        {
+                            "price": "11",
+                            "size": "M"
+                        },
+                        {
+                            "price": "12",
+                            "size": "L"
+                        }
+                    ]
+                },
+                {
+                    "pid": "p6",
+                    "pename": "Shrimp",
+                    "pvname": "Phở tôm",
+                    "pimage": "./media/menus/ricenoodlesoup/p6.jpg",
+                    "ppieces": "",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "10",
+                            "size": "S"
+                        },
+                        {
+                            "price": "11",
+                            "size": "M"
+                        },
+                        {
+                            "price": "12",
+                            "size": "L"
+                        }
+                    ]
+                },
+                {
+                    "pid": "p7",
+                    "pename": "Ox Tail",
+                    "pvname": "Phở Đuôi Bò",
+                    "pimage": "./media/menus/ricenoodlesoup/p7.jpg",
+                    "ppieces": "",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "11",
+                            "size": "S"
+                        },
+                        {
+                            "price": "12",
+                            "size": "M"
+                        },
+                        {
+                            "price": "13",
+                            "size": "L"
+                        }
+                    ]
+                },
+                {
+                    "pid": "p8",
+                    "pename": "Seafood",
+                    "pvname": "Phở Hải Sản",
+                    "pimage": "./media/menus/ricenoodlesoup/p8.jpg",
+                    "ppieces": "",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "10",
+                            "size": "S"
+                        },
+                        {
+                            "price": "11",
+                            "size": "M"
+                        },
+                        {
+                            "price": "12",
+                            "size": "L"
+                        }
+                    ]
+                },
+                {
+                    "pid": "p9",
+                    "pename": "Spicy Pho",
+                    "pvname": "Phở Cay",
+                    "pimage": "./media/menus/ricenoodlesoup/p9.jpg",
+                    "ppieces": "",
+                    "pdesc": "Choice of any kind Pho",
+                    "prices": [
+                        {
+                            "price": "10",
+                            "size": "S"
+                        },
+                        {
+                            "price": "11",
+                            "size": "M"
+                        },
+                        {
+                            "price": "12",
+                            "size": "L"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "cid": "specialities",
+            "cename": "Specialities",
+            "cvname": "Món đặc sản",
+            "cimage": "./media/menus/specialities/s0.jpg",
+            "cposition": "10",
+            "cdesc": "Any noodle substitute extra $1.00 (clear or egg noodles)",
+            "cnote": "Please let us know if you have any food allergies",
+            "cproducts": [
+                {
+                    "pid": "s1",
+                    "pename": " Phnom Penh Noodle Soup",
+                    "pvname": "Hủ Tiếu Nam Vang",
+                    "pimage": "./media/menus/specialities/s1.jpg",
+                    "ppieces": "",
+                    "pdesc": "BBQ pork, shrimp, quail egg, ground pork OR choice of Meatball or Seafood or Wonton.",
+                    "prices": [
+                        {
+                            "price": "13",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "s2",
+                    "pename": "Beef Stew Noodle",
+                    "pvname": "Hủ Tiếu Bò Kho",
+                    "pimage": "./media/menus/specialities/s2.jpg",
+                    "ppieces": "",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "13",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "s3",
+                    "pename": "Hue Beef Noodle Soup",
+                    "pvname": "Bún Bò Huế",
+                    "pimage": "./media/menus/specialities/s3.jpg",
+                    "ppieces": "",
+                    "pdesc": "Beef Flank, Sausage, Pork Hock, Pork Blood, Noodle, Sate OR choice of Ox Tail (+$1) or Seafood (+$1)",
+                    "prices": [
+                        {
+                            "price": "13",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "s4",
+                    "pename": "Quang Noodle Soup",
+                    "pvname": "Mì Quảng",
+                    "pimage": "./media/menus/specialities/s4.jpg",
+                    "ppieces": "",
+                    "pdesc": "Yellow Noodles, Pork Rib, Chicken, Shrimp, Quail Eggs, Broth",
+                    "prices": [
+                        {
+                            "price": "13",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "s5",
+                    "pename": "Crab Paste Noodle Soup",
+                    "pvname": "Bún Riêu Cua",
+                    "pimage": "./media/menus/specialities/s5.jpg",
+                    "ppieces": "",
+                    "pdesc": "Crab Paste, Shrimp, Pork Blood, Pork Hood",
+                    "prices": [
+                        {
+                            "price": "13",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "s6",
+                    "pename": "Crab Noodle Soup",
+                    "pvname": "Bánh Canh Cua",
+                    "pimage": "./media/menus/specialities/s6.jpg",
+                    "ppieces": "",
+                    "pdesc": "Crab, Shrimp, Quail Egg & Noodle Mix in bowl w/ Crab Soup",
+                    "prices": [
+                        {
+                            "price": "14",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "s7",
+                    "pename": "Chicken Vermicelli Soup",
+                    "pvname": " Miến Gà",
+                    "pimage": "./media/menus/specialities/s7.jpg",
+                    "ppieces": "",
+                    "pdesc": "Chicken, Bamboo Shoots, Pork Blood and Broth",
+                    "prices": [
+                        {
+                            "price": "13",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "s8",
+                    "pename": "Duck & Bamboo Noodle Soup",
+                    "pvname": "Bún Măng Vịt",
+                    "pimage": "./media/menus/specialities/s8.jpg",
+                    "ppieces": "",
+                    "pdesc": "Duck, Bamboo Shoots, Pork Blood and Broth",
+                    "prices": [
+                        {
+                            "price": "13",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "s9",
+                    "pename": "Sate Rice Noodle",
+                    "pvname": " Hủ Tiếu Sa Tế",
+                    "pimage": "./media/menus/specialities/s9.jpg",
+                    "ppieces": "",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "13",
+                            "size": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "cid": "vegetarian",
+            "cename": "Vegetarian",
+            "cvname": "Món chay",
+            "cimage": "./media/menus/vegetarian/v0.jpg",
+            "cposition": "11",
+            "cdesc": "",
+            "cnote": "Please let us know if you have any food allergies",
+            "cproducts": [
+                {
+                    "pid": "v1",
+                    "pename": "Veggies Egg Rolls",
+                    "pvname": "Chả giò chay",
+                    "pimage": "./media/menus/vegetarian/v1.jpg",
+                    "ppieces": "6pcs",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "8",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "v2",
+                    "pename": "Veggies Dried Noodle Bowl",
+                    "pvname": "Bún Chay",
+                    "pimage": "./media/menus/vegetarian/v2.jpg",
+                    "ppieces": "",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "13",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "v3",
+                    "pename": "Veggies Vermicelli Soup",
+                    "pvname": "Hủ Tiếu Chay",
+                    "pimage": "./media/menus/vegetarian/v3.jpg",
+                    "ppieces": "",
+                    "pdesc": "Any noddle substitute (clear or egg noodles) +$1",
+                    "prices": [
+                        {
+                            "price": "13",
+                            "size": ""
+                        }
+                    ]
+                },
+                {
+                    "pid": "v4",
+                    "pename": "Veggies Fried Rice",
+                    "pvname": "Cơm Chiên Chay",
+                    "pimage": "./media/menus/vegetarian/v4.jpg",
+                    "ppieces": "",
+                    "pdesc": "",
+                    "prices": [
+                        {
+                            "price": "13",
+                            "size": ""
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
