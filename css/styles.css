@@ -20,7 +20,7 @@
 
 html {
     scroll-behavior: smooth;
-}  
+}
 
 .navbar-section .navbar a {
     font-family: BarlowSemiCondensed-SemiBold;
@@ -43,7 +43,7 @@ html {
     max-height: 85vh;
 }
 
-.note-section{
+.note-section {
     font-family: BarlowSemiCondensed-SemiBold;
     font-style: normal;
     font-weight: 800;
@@ -54,7 +54,8 @@ html {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
 }
-.note-section .hours{
+
+.note-section .hours {
     font-size: 18px;
 }
 
@@ -75,7 +76,7 @@ html {
     text-rendering: optimizeLegibility;
 }
 
-.contact-section .jumbotron{
+.contact-section .jumbotron {
     font-family: BarlowSemiCondensed-SemiBold;
     font-style: normal;
     font-weight: 800;
@@ -91,7 +92,7 @@ html {
     font-size: 48px;
 }
 
-.menu-section .nav-tabs a{
+.menu-section .nav-tabs a {
     font-family: BarlowSemiCondensed-SemiBold;
     font-style: normal;
     font-weight: 800;
@@ -116,8 +117,7 @@ html {
     cursor: pointer;
 }
 
-.nav-tabs .nav-item .dropdown-menu.show,
-.nav-tabs .nav-item .dropdown-menu {
+.nav-tabs .nav-item .dropdown-menu.show, .nav-tabs .nav-item .dropdown-menu {
     width: 100%;
     text-align: center;
     border: none;
@@ -130,7 +130,10 @@ html {
     background-color: #ffffff !important;
     border-color: #fff #fff #dee2e6 #fff !important;
 }
-.nav-tabs .nav-link{border-bottom: 1px solid transparent;}
+
+.nav-tabs .nav-link {
+    border-bottom: 1px solid transparent;
+}
 
 .menu-section h2 {
     font-family: Allura-Regular;
@@ -139,14 +142,14 @@ html {
     text-transform: capitalize;
 }
 
-.menu-section h3{
+.menu-section h3 {
     font-family: Allura-Regular;
     line-height: 100%;
     font-size: 48px;
     text-transform: capitalize;
 }
 
-.menu-section .p-name, .menu-section .p-desc, .menu-section .p-price{
+.menu-section .p-name, .menu-section .p-desc, .menu-section .p-price {
     font-family: Barlow;
     font-style: normal;
     font-weight: 800;
@@ -157,7 +160,7 @@ html {
     cursor: pointer;
 }
 
-.menu-section .p-desc, .menu-section .c-desc{
+.menu-section .p-desc, .menu-section .c-desc {
     font-size: 16px;
     font-weight: 400;
 }
@@ -168,7 +171,8 @@ html {
     font-size: 54px;
     text-transform: capitalize;
 }
-#googleMap{
+
+#googleMap {
     height: 100%;
 }
 
@@ -183,6 +187,7 @@ html {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
 }
+
 .footer-section img {
     max-height: 15vh;
 }
