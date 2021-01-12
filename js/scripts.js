@@ -51,7 +51,7 @@ xmlhttp.onreadystatechange = function () {
 
             menu += '\
             <div id="'+ cats[i].cid + '" class="container-fluid  px-0 tab-pane ' + active + '">\
-                <div class="row"> \
+                <div class="row pb-3"> \
                     <div class="col-12 text-center"> \
                         <h3 class="c-name text-success">'+ cats[i].cename + '</h3> \
                     </div> \
@@ -61,6 +61,7 @@ xmlhttp.onreadystatechange = function () {
                     </div> \
                     <div class="col-12"> \
                         <p class="c-desc text-success">'+ cats[i].cdesc + '</p> \
+                        <p class="c-desc text-success text-center">'+ cats[i].cnote + '</p> \
                     </div> \
                 </div>';
             var j;
@@ -99,11 +100,7 @@ xmlhttp.onreadystatechange = function () {
                 var opts = pros[j].prices;
                 if (opts.length == 1) {
                     menu += '<p>' + opts[0].price + '</p>';
-                } else {
-                    for (z = 0; z < opts.length; z++) {
-                        menu += '<p>' + opts[z].price + ' (' + opts[z].size + ')</p>';
-                    }
-                }
+                } 
                 menu += '\
                             </div> \
                         </div> \

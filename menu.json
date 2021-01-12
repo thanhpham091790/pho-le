@@ -24,8 +24,8 @@
             "cvname": "Món Khai Vị",
             "cimage": "./media/menus/appetizers/a0.jpg",
             "cposition": "0",
-            "cdesc": "All plates served with vegetables, fish sauce and a bowl of soup",
-            "cnote": "Please let us know if you have any food allergies",
+            "cdesc": "",
+            "cnote": "",
             "cproducts": [
                 {
                     "pid": "a1",
@@ -74,16 +74,12 @@
                     "pename": "Asian Wings",
                     "pvname": "Cánh Gà Chiên",
                     "pimage": "./media/menus/appetizers/a4.jpg",
-                    "ppieces": "6pcs",
+                    "ppieces": "5pcs/10pcs",
                     "pdesc": "",
                     "prices": [
                         {
-                            "price": "6",
-                            "size": "5 Wings"
-                        },
-                        {
-                            "price": "10",
-                            "size": "10 Wings"
+                            "price": "6/10",
+                            "size": ""
                         }
                     ]
                 },
@@ -165,8 +161,8 @@
             "cvname": "Món ăn trẻ em",
             "cimage": "./media/menus/kidmeals/k0.jpg",
             "cposition": "1",
-            "cdesc": "12 years or under",
-            "cnote": "Please let us know if you have any food allergies",
+            "cdesc": "",
+            "cnote": "12 years or under",
             "cproducts": [
                 {
                     "pid": "k1",
@@ -204,8 +200,8 @@
             "cvname": "Món cuốn",
             "cimage": "./media/menus/wraps/w0.jpg",
             "cposition": "2",
-            "cdesc": "",
-            "cnote": "Please let us know if you have any food allergies",
+            "cdesc": "All these dishes in this section are garnished with peanuts and served with a variety of fresh vegetables, rice noodles, fish sauce. Wrapped with rice paper",
+            "cnote": "",
             "cproducts": [
                 {
                     "pid": "w1",
@@ -226,16 +222,12 @@
                     "pename": "Combination Wrap",
                     "pvname": "Món Cuốn Đặc Biệt",
                     "pimage": "./media/menus/wraps/w2.jpg",
-                    "ppieces": "",
+                    "ppieces": "Half/Full",
                     "pdesc": "",
                     "prices": [
                         {
-                            "price": "32",
-                            "size": "Half"
-                        },
-                        {
-                            "price": "45",
-                            "size": "Full"
+                            "price": "32/45",
+                            "size": ""
                         }
                     ]
                 }
@@ -248,23 +240,19 @@
             "cimage": "./media/menus/hotpot/l0.jpg",
             "cposition": "3",
             "cdesc": "",
-            "cnote": "Please let us know if you have any food allergies",
+            "cnote": "",
             "cproducts": [
                 {
                     "pid": "l1",
                     "pename": "Goat Hot Pot",
                     "pvname": "Lẩu Dê",
                     "pimage": "./media/menus/hotpot/l1.jpg",
-                    "ppieces": "",
+                    "ppieces": "M/L",
                     "pdesc": "",
                     "prices": [
                         {
-                            "price": "32",
-                            "size": "M"
-                        },
-                        {
-                            "price": "50",
-                            "size": "L"
+                            "price": "32/50",
+                            "size": ""
                         }
                     ]
                 },
@@ -273,16 +261,12 @@
                     "pename": "Ox Tail Hot Pot",
                     "pvname": "Lẩu Đuôi Bò",
                     "pimage": "./media/menus/hotpot/l2.jpg",
-                    "ppieces": "",
+                    "ppieces": "M/L",
                     "pdesc": "",
                     "prices": [
                         {
-                            "price": "32",
-                            "size": "M"
-                        },
-                        {
-                            "price": "50",
-                            "size": "L"
+                            "price": "32/50",
+                            "size": ""
                         }
                     ]
                 },
@@ -291,16 +275,12 @@
                     "pename": "Crispy Fried Catfish",
                     "pvname": "Cá Chiên Xù",
                     "pimage": "./media/menus/hotpot/l3.jpg",
-                    "ppieces": "",
+                    "ppieces": "3lbs/4lbs",
                     "pdesc": "",
                     "prices": [
                         {
-                            "price": "35",
-                            "size": "2.5-3lbs"
-                        },
-                        {
-                            "price": "50",
-                            "size": "3-4.5lbs"
+                            "price": "35/50",
+                            "size": ""
                         }
                     ]
                 }
@@ -312,8 +292,8 @@
             "cvname": "Món Gỏi",
             "cimage": "./media/menus/salads/g0.jpg",
             "cposition": "4",
-            "cdesc": "All Salads topped with peanut, fried onion",
-            "cnote": "Please let us know if you have any food allergies",
+            "cdesc": "All these salads are topped with peanuts, fried onion tossed with signature fish sauce",
+            "cnote": "Small: $9 | Family Size: $20",
             "cproducts": [
                 {
                     "pid": "g1",
@@ -323,14 +303,7 @@
                     "ppieces": "",
                     "pdesc": "",
                     "prices": [
-                        {
-                            "price": "9",
-                            "size": "Small"
-                        },
-                        {
-                            "price": "20",
-                            "size": "Family"
-                        }
+                        
                     ]
                 },
                 {
@@ -341,14 +314,7 @@
                     "ppieces": "",
                     "pdesc": "",
                     "prices": [
-                        {
-                            "price": "9",
-                            "size": "Small"
-                        },
-                        {
-                            "price": "20",
-                            "size": "Family"
-                        }
+                        
                     ]
                 },
                 {
@@ -359,14 +325,7 @@
                     "ppieces": "",
                     "pdesc": "",
                     "prices": [
-                        {
-                            "price": "9",
-                            "size": "Small"
-                        },
-                        {
-                            "price": "20",
-                            "size": "Family"
-                        }
+                        
                     ]
                 },
                 {
@@ -377,14 +336,7 @@
                     "ppieces": "",
                     "pdesc": "",
                     "prices": [
-                        {
-                            "price": "9",
-                            "size": "Small"
-                        },
-                        {
-                            "price": "20",
-                            "size": "Family"
-                        }
+                        
                     ]
                 }
             ]
@@ -395,8 +347,8 @@
             "cvname": "Món Bún",
             "cimage": "./media/menus/ricenoodebowl/b0.jpg",
             "cposition": "5",
-            "cdesc": "Choice of: egg rolls, pork, beef, chicken, shrimp (+$1).",
-            "cnote": "Please let us know if you have any food allergies",
+            "cdesc": "All these dishes in this section are garnished with peanuts, green onion oil and served with a variety of fresh vegetables, cucumbers, rice noodles, served with signature fish sauce",
+            "cnote": "",
             "cproducts": [
                 {
                     "pid": "b1",
@@ -434,8 +386,8 @@
             "cvname": "Cơm Chiên",
             "cimage": "./media/menus/friedrice/fr0.jpg",
             "cposition": "6",
-            "cdesc": "",
-            "cnote": "Please let us know if you have any food allergies",
+            "cdesc": "All plates served with vegetables, fish sauce and a bowl of soup",
+            "cnote": "",
             "cproducts": [
                 {
                     "pid": "fr1",
@@ -515,8 +467,8 @@
             "cvname": "Món Cháo",
             "cimage": "./media/menus/porridge/por0.jpg",
             "cposition": "7",
-            "cdesc": "",
-            "cnote": "Please let us know if you have any food allergies",
+            "cdesc": "Served with bread sticks",
+            "cnote": "",
             "cproducts": [
                 {
                     "pid": "por1",
@@ -554,8 +506,8 @@
             "cvname": "Cơm Tấm",
             "cimage": "./media/menus/steamedrice/c0.jpg",
             "cposition": "8",
-            "cdesc": "",
-            "cnote": "Please let us know if you have any food allergies",
+            "cdesc": "All plates served with vegetables, fish sauce and a bowl of soup",
+            "cnote": "",
             "cproducts": [
                 {
                     "pid": "c1",
@@ -650,8 +602,8 @@
             "cvname": "Phở",
             "cimage": "./media/menus/ricenoodlesoup/p0.jpg",
             "cposition": "9",
-            "cdesc": "Any noodle substitute +$1 (clear or egg noodles). Extra Meats: $3. Extra noodles: $3",
-            "cnote": "Please let us know if you have any food allergies",
+            "cdesc": "Phở comes with rice noodles, beef broth, a variety choice of beef, and topped with green and white onions. A side of fresh basil leaves, bean sprouts, jalapeno and lime make Phở flavorful. Hoisin sauces and siracha are available for you to enhance your taste. Pho is always served hot to give you the most delicious taste. Any noodle substitute +$1 (clear or egg noodles). Extra Meats: $3. Extra noodles: $3",
+            "cnote": "Small: $9 | Medium: $10 | Large: $11",
             "cproducts": [
                 {
                     "pid": "p1",
@@ -661,18 +613,7 @@
                     "ppieces": "",
                     "pdesc": "Choice of meat: Steak, Brisket, Fat Brisket, Flank, Tendon, Trip",
                     "prices": [
-                        {
-                            "price": "9",
-                            "size": "S"
-                        },
-                        {
-                            "price": "10",
-                            "size": "M"
-                        },
-                        {
-                            "price": "11",
-                            "size": "L"
-                        }
+                        
                     ]
                 },
                 {
@@ -681,20 +622,9 @@
                     "pvname": "Phở đặc biệt",
                     "pimage": "./media/menus/ricenoodlesoup/p2.jpg",
                     "ppieces": "",
-                    "pdesc": "2 or more kinds of meat on P1.Custom Pho",
+                    "pdesc": "2 or more kinds of meat on P1.Custom Pho (+$1 any size)",
                     "prices": [
-                        {
-                            "price": "10",
-                            "size": "S"
-                        },
-                        {
-                            "price": "11",
-                            "size": "M"
-                        },
-                        {
-                            "price": "12",
-                            "size": "L"
-                        }
+                        
                     ]
                 },
                 {
@@ -705,18 +635,7 @@
                     "ppieces": "",
                     "pdesc": "",
                     "prices": [
-                        {
-                            "price": "9",
-                            "size": "S"
-                        },
-                        {
-                            "price": "10",
-                            "size": "M"
-                        },
-                        {
-                            "price": "11",
-                            "size": "L"
-                        }
+                        
                     ]
                 },
                 {
@@ -727,18 +646,7 @@
                     "ppieces": "",
                     "pdesc": "",
                     "prices": [
-                        {
-                            "price": "9",
-                            "size": "S"
-                        },
-                        {
-                            "price": "10",
-                            "size": "M"
-                        },
-                        {
-                            "price": "11",
-                            "size": "L"
-                        }
+                        
                     ]
                 },
                 {
@@ -749,18 +657,7 @@
                     "ppieces": "",
                     "pdesc": "Vegetarian broth (+$1 any size)",
                     "prices": [
-                        {
-                            "price": "10",
-                            "size": "S"
-                        },
-                        {
-                            "price": "11",
-                            "size": "M"
-                        },
-                        {
-                            "price": "12",
-                            "size": "L"
-                        }
+                        
                     ]
                 },
                 {
@@ -769,20 +666,9 @@
                     "pvname": "Phở tôm",
                     "pimage": "./media/menus/ricenoodlesoup/p6.jpg",
                     "ppieces": "",
-                    "pdesc": "",
+                    "pdesc": "Shrimp (+$1 any size)",
                     "prices": [
-                        {
-                            "price": "10",
-                            "size": "S"
-                        },
-                        {
-                            "price": "11",
-                            "size": "M"
-                        },
-                        {
-                            "price": "12",
-                            "size": "L"
-                        }
+                        
                     ]
                 },
                 {
@@ -791,20 +677,9 @@
                     "pvname": "Phở Đuôi Bò",
                     "pimage": "./media/menus/ricenoodlesoup/p7.jpg",
                     "ppieces": "",
-                    "pdesc": "",
+                    "pdesc": "Ox Tail (+$2 any size)",
                     "prices": [
-                        {
-                            "price": "11",
-                            "size": "S"
-                        },
-                        {
-                            "price": "12",
-                            "size": "M"
-                        },
-                        {
-                            "price": "13",
-                            "size": "L"
-                        }
+                        
                     ]
                 },
                 {
@@ -813,20 +688,9 @@
                     "pvname": "Phở Hải Sản",
                     "pimage": "./media/menus/ricenoodlesoup/p8.jpg",
                     "ppieces": "",
-                    "pdesc": "",
+                    "pdesc": "Seafood (+$1 any size)",
                     "prices": [
-                        {
-                            "price": "10",
-                            "size": "S"
-                        },
-                        {
-                            "price": "11",
-                            "size": "M"
-                        },
-                        {
-                            "price": "12",
-                            "size": "L"
-                        }
+                        
                     ]
                 },
                 {
@@ -835,20 +699,9 @@
                     "pvname": "Phở Cay",
                     "pimage": "./media/menus/ricenoodlesoup/p9.jpg",
                     "ppieces": "",
-                    "pdesc": "Choice of any kind Pho",
+                    "pdesc": "Choice of any kind Pho (+$1 any size)",
                     "prices": [
-                        {
-                            "price": "10",
-                            "size": "S"
-                        },
-                        {
-                            "price": "11",
-                            "size": "M"
-                        },
-                        {
-                            "price": "12",
-                            "size": "L"
-                        }
+                        
                     ]
                 }
             ]
@@ -859,8 +712,8 @@
             "cvname": "Món đặc sản",
             "cimage": "./media/menus/specialities/s0.jpg",
             "cposition": "10",
-            "cdesc": "Any noodle substitute extra $1.00 (clear or egg noodles)",
-            "cnote": "Please let us know if you have any food allergies",
+            "cdesc": "",
+            "cnote": "Any noodle substitute extra $1.00 (clear or egg noodles)",
             "cproducts": [
                 {
                     "pid": "s1",
@@ -997,7 +850,7 @@
             "cimage": "./media/menus/vegetarian/v0.jpg",
             "cposition": "11",
             "cdesc": "",
-            "cnote": "Please let us know if you have any food allergies",
+            "cnote": "",
             "cproducts": [
                 {
                     "pid": "v1",

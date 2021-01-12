@@ -42,16 +42,6 @@ html {
 .home-section .carousel-item {
     max-height: 85vh;
 }
-.home-section .carousel-cap{
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translate(0,-50%);
-    z-index: 10;
-    padding: 16px 0px;
-    color: #fff;
-    text-align: center;
-}
 
 .note-section{
     font-family: BarlowSemiCondensed-SemiBold;
@@ -101,7 +91,7 @@ html {
     font-size: 48px;
 }
 
-.menu-section .nav-tabs a {
+.menu-section .nav-tabs a{
     font-family: BarlowSemiCondensed-SemiBold;
     font-style: normal;
     font-weight: 800;
@@ -113,7 +103,7 @@ html {
     cursor: pointer;
 }
 
-.menu-section .nav-tabs a span {
+.menu-section .nav-tabs a span, .about-section a span {
     font-family: Barlow;
     font-style: normal;
     font-weight: 400;
@@ -149,7 +139,7 @@ html {
     text-transform: capitalize;
 }
 
-.menu-section h3, .home-section h3{
+.menu-section h3{
     font-family: Allura-Regular;
     line-height: 100%;
     font-size: 48px;
