@@ -1,5 +1,5 @@
 // Load menu category when click 
-function showActive(element){
+function showActive(element) {
     document.getElementById("menu-active").innerHTML = element.innerHTML;
 }
 
@@ -34,7 +34,7 @@ xmlhttp.onreadystatechange = function () {
             } else {
                 is_first = "";
             }
-            menu_nav += '<a onclick="showActive(this)" '+ is_first +' class="dropdown-item text-dark m-0 py-3 border-bottom" data-toggle="tab" \
+            menu_nav += '<a onclick="showActive(this)" ' + is_first + ' class="dropdown-item text-dark m-0 py-3 border-bottom" data-toggle="tab" \
             href = "#'+ cats[i].cid + '">' + cats[i].cename + '<span class="d-block">' + cats[i].cvname + '</span></a>';
         }
         document.getElementById("menu-nav").innerHTML = menu_nav;
@@ -42,64 +42,73 @@ xmlhttp.onreadystatechange = function () {
         // Load menu items from json file
         var menu = "", active;
         for (i = 0; i < cats.length; i++) {
+            // Load the first tab content
             if (cats[i].cposition == "0") {
                 active = " active";
             } else {
                 active = "";
             }
+
             menu += '\
             <div id="'+ cats[i].cid + '" class="container-fluid  px-0 tab-pane ' + active + '">\
                 <div class="row"> \
                     <div class="col-12 text-center"> \
-                        <h3 class="c-name text-success">'+ cats[i].cename +'</h3> \
+                        <h3 class="c-name text-success">'+ cats[i].cename + '</h3> \
                     </div> \
                     <div class="col-12"> \
-                        <img class="c-img img-fluid w-100" src="'+ cats[i].cimage + '" \
+                        <img onerror="this.style.display=\'none\';" class="c-img img-fluid w-100" src="'+ cats[i].cimage + '" \
                             alt="'+ cats[i].cname + '"> \
                     </div> \
                     <div class="col-12"> \
                         <p class="c-desc text-success">'+ cats[i].cdesc + '</p> \
                     </div> \
                 </div>';
-                var j;
-                var pros = cats[i].cproducts;
-                for (j = 0; j < pros.length; j++) {
-                    var pvname="", ppieces="",pimage="";
-                    if(pros[j].pvname != ""){pvname = pros[j].pvname + ' - ';}
-                    if(pros[j].ppieces != ""){ppieces = ' (' + pros[j].ppieces + ')';}
-                    if(pros[j].pimage != ""){pimage = '<i class="fas fa-camera text-success" data-toggle="modal"';}
-                    menu += '\
+            var j;
+            var pros = cats[i].cproducts;
+            for (j = 0; j < pros.length; j++) {
+                var pvname = "", ppieces = "", pimage = "";
+                if (pros[j].pvname != "") { pvname = pros[j].pvname + ' - '; }
+                if (pros[j].ppieces != "") { ppieces = ' (' + pros[j].ppieces + ')'; }
+                var url = pros[j].pimage;
+                var isImgExist = imageExists(url);
+                if (isImgExist) {
+                    pimage = '\
+                    <span class="p-img"> \
+                            <i class="fas fa-camera text-success" data-toggle="modal" data-target="#'+ pros[j].pid + '"></i> \
+                    </span> \
+                    <div class="modal fade" id="'+ pros[j].pid + '"> \
+                        <div class="modal-dialog modal-dialog-centered"> \
+                            <div class="modal-content"> \
+                                <img class="img-fluid" src="'+ pros[j].pimage + '" alt="' + pros[j].pename + '"> \
+                            </div> \
+                        </div> \
+                    </div> \
+                    ';
+                } else {
+                    pimage = '';
+                }
+                menu += '\
                     <div class="row"> \
                         <div class="col-8"> \
-                            <p class="p-name">'+ pros[j].pid + '. ' + pvname + pros[j].pename + ppieces + ' \
-                                <span class="p-img"> '+ pimage +'\
-                                        data-target="#'+ pros[j].pid + '"></i></span> \
-                            <div class="modal fade" id="'+ pros[j].pid + '"> \
-                                <div class="modal-dialog modal-dialog-centered"> \
-                                    <div class="modal-content"> \
-                                        <img class="img-fluid" src="'+ pros[j].pimage + '" alt="' + pros[j].pename + '"> \
-                                    </div> \
-                                </div> \
-                            </div> \
-                            </p> \
+                            <p class="p-name">'+ pros[j].pid + '. ' + pvname + pros[j].pename + ppieces + pimage + '</p> \
                             <p class="p-desc">'+ pros[j].pdesc + '</p> \
                         </div> \
                         <div class="col-4"> \
                             <div class="p-price">';
-                        var z;
-                        var opts = pros[j].prices;
-                        if (opts.length == 1) {
-                            menu += '<p>' + opts[0].price + '</p>';
-                        } else {
-                            for (z = 0; z < opts.length; z++) {
-                                menu += '<p>' + opts[z].price + ' (' + opts[z].size + ')</p>';
-                            }
-                        }
-                        menu += '\
+                var z;
+                var opts = pros[j].prices;
+                if (opts.length == 1) {
+                    menu += '<p>' + opts[0].price + '</p>';
+                } else {
+                    for (z = 0; z < opts.length; z++) {
+                        menu += '<p>' + opts[z].price + ' (' + opts[z].size + ')</p>';
+                    }
+                }
+                menu += '\
                             </div> \
                         </div> \
                     </div>';
-                }
+            }
             menu += '\
             </div>';
         }
@@ -122,6 +131,22 @@ xmlhttp.onreadystatechange = function () {
 };
 xmlhttp.open("GET", "menu.json", true);
 xmlhttp.send();
+
+// Check image exists
+function imageExists(src) {
+    var isExist;
+    var xhr = new XMLHttpRequest();
+    xhr.open('HEAD', src, false);
+    xhr.send();
+
+    if (xhr.status == "404") {
+        isExist = false;
+    } else {
+        isExist = true;
+    }
+    return isExist;
+}
+
 
 // Load Google Map section
 function myMap() {

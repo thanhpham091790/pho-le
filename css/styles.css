@@ -18,6 +18,10 @@
     src: url("../fonts/barlow/BarlowSemiCondensed-SemiBold.otf");
 }
 
+html {
+    scroll-behavior: smooth;
+}  
+
 .navbar-section .navbar a {
     font-family: BarlowSemiCondensed-SemiBold;
     font-style: normal;
